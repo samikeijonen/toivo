@@ -431,6 +431,11 @@ h6 {
 	.custom-header-image .site-branding {
 		padding: 60px 0;
 		margin-bottom: 40px;
+		margin-top: 40px;
+	}
+	
+	.has-site-logo.custom-header-image .site-branding {
+		margin-top: 0;
 	}
 
 }
