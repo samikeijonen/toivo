@@ -497,6 +497,60 @@ function toivo_customize_register( $wp_customize ) {
 	
 	}
 	
+	/* == Footer section == */
+	
+	/* Add the footer section. */
+	$wp_customize->add_section(
+		'footer',
+		array(
+			'title'    => esc_html__( 'Footer Settings', 'toivo' ),
+			'priority' => 50,
+			'panel'    => 'theme'
+		)
+	);
+	
+	/* Add hide footer setting. */
+	$wp_customize->add_setting(
+		'hide_footer',
+		array(
+			'default'           => '',
+			'sanitize_callback' => 'toivo_sanitize_checkbox'
+		)
+	);
+	
+	/* Add hide footer control. */
+	$wp_customize->add_control(
+		'hide_footer',
+		array(
+			'label'       => esc_html__( 'Hide Footer', 'toivo' ),
+			'description' => esc_html__( 'Check this if you want to hide Footer content.', 'toivo' ),
+			'section'     => 'footer',
+			'priority'    => 10,
+			'type'        => 'checkbox'
+		)
+	);
+	
+	/* Add the footer text setting. */
+	$wp_customize->add_setting(
+		'footer_text',
+		array(
+			'default'           => '',
+			'sanitize_callback' => 'toivo_sanitize_textarea'
+		)
+	);
+	
+	/* Add the footer text control. */
+	$wp_customize->add_control(
+		'footer_text',
+		array(
+			'label'       => esc_html__( 'Footer text', 'toivo' ),
+			'description' => esc_html__( 'Enter Footer text which replaces default text.', 'toivo' ),
+			'section'     => 'footer',
+			'priority'    => 20,
+			'type'        => 'textarea'
+		)
+	);
+	
 }
 add_action( 'customize_register', 'toivo_customize_register' );
 
@@ -617,6 +671,23 @@ function toivo_sanitize_checkbox( $input ) {
 		return '';
 	}
 
+}
+
+/**
+ * Sanitizes the footer content on the customize screen. Users with the 'unfiltered_html' cap can post 
+ * anything. For other users, wp_filter_post_kses() is ran over the setting.
+ *
+ * @since 1.0.1
+ */
+function toivo_sanitize_textarea( $setting, $object ) {
+	
+	/* Make sure we kill evil scripts from users without the 'unfiltered_html' cap. */
+	if ( 'footer_text' == $object->id && !current_user_can( 'unfiltered_html' ) ) {
+		$setting = stripslashes( wp_filter_post_kses( addslashes( $setting ) ) );
+	}
+	/* Return the sanitized setting. */
+	return $setting;
+	
 }
 
 /**
