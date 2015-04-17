@@ -24,6 +24,12 @@ All other resources and theme elements are licensed under the [GNU GPL](http://w
 
 ## Changelog
 
-### Version 1.0.0
+### Version 1.0.1 - April 17, 2015
+
+* Add footer section in the Customizer where you can hide or replace footer text.
+* Add Danish translations. Thanks to [Reinar](http://www.reinar-svendsen).
+* CSS tweak: add default top margin to site branding if there is no logo set.
+
+### Version 1.0.0 - April 17, 2015
 
 * Everything's new!
