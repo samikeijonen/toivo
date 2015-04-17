@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Toivo 1.0.0\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
-"POT-Creation-Date: 2015-04-13 14:38:01+00:00\n"
+"POT-Creation-Date: 2015-04-17 15:24:47+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -114,15 +114,15 @@ msgid ""
 "searching can help."
 msgstr ""
 
-#: footer.php:25
+#: footer.php:34
 msgid "http://wordpress.org/"
 msgstr ""
 
-#: footer.php:25
+#: footer.php:34
 msgid "Proudly powered by %s"
 msgstr ""
 
-#: footer.php:27
+#: footer.php:36
 msgid "Theme %1$s by %2$s"
 msgstr ""
 
@@ -343,6 +343,26 @@ msgstr ""
 msgid "Portfolio Page Description"
 msgstr ""
 
+#: inc/customizer.php:506
+msgid "Footer Settings"
+msgstr ""
+
+#: inc/customizer.php:525
+msgid "Hide Footer"
+msgstr ""
+
+#: inc/customizer.php:526
+msgid "Check this if you want to hide Footer content."
+msgstr ""
+
+#: inc/customizer.php:546
+msgid "Footer text"
+msgstr ""
+
+#: inc/customizer.php:547
+msgid "Enter Footer text which replaces default text."
+msgstr ""
+
 #: inc/template-tags.php:21
 msgid "Comment navigation"
 msgstr ""
@@ -540,7 +560,7 @@ msgctxt "Arrow for link post format in left to right languages"
 msgid "&rarr;"
 msgstr ""
 
-#: footer.php:26
+#: footer.php:35
 msgctxt "Separator in site info."
 msgid "&middot;"
 msgstr ""
