@@ -10,6 +10,15 @@
  */
 define( 'TOIVO_VERSION', '1.0.2' );
 
+/**
+ * The suffix to use for scripts.
+ */
+if ( ( defined( 'SCRIPT_DEBUG' ) && true === SCRIPT_DEBUG ) ) {
+	define( 'TOIVO_SUFFIX', '' );
+} else {
+	define( 'TOIVO_SUFFIX', '.min' );
+}
+
 if ( ! function_exists( 'toivo_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -194,11 +203,11 @@ function toivo_scripts() {
 	wp_enqueue_style( 'toivo-fonts', toivo_fonts_url(), array(), null );
 	
 	/* Add Genericons font, used in the main stylesheet. */
-	wp_enqueue_style( 'genericons', trailingslashit( get_template_directory_uri() ) . 'fonts/genericons/genericons/genericons.css', array(), '3.3' );
+	wp_enqueue_style( 'genericons', trailingslashit( get_template_directory_uri() ) . 'fonts/genericons/genericons/genericons' . TOIVO_SUFFIX . '.css', array(), '3.3' );
 	
 	/* Enqueue parent theme styles if using child theme. */
 	if ( is_child_theme() ) {
-		wp_enqueue_style( 'toivo-parent-style', trailingslashit( get_template_directory_uri() ) . 'style.css', array(), TOIVO_VERSION );
+		wp_enqueue_style( 'toivo-parent-style', trailingslashit( get_template_directory_uri() ) . 'style' . TOIVO_SUFFIX . '.css', array(), TOIVO_VERSION );
 	}
 	
 	/* Enqueue active theme styles. */
@@ -206,14 +215,14 @@ function toivo_scripts() {
 	
 	/* Enqueue responsive navigation if one of the menus is in use. */
 	if ( has_nav_menu( 'primary' ) || has_nav_menu( 'top' ) || has_nav_menu( 'social' ) ) {
-		wp_enqueue_script( 'toivo-navigation', get_template_directory_uri() . '/js/responsive-nav.js', array(), TOIVO_VERSION, true );
+		wp_enqueue_script( 'toivo-navigation', get_template_directory_uri() . '/js/responsive-nav' . TOIVO_SUFFIX . '.js', array(), TOIVO_VERSION, true );
 	
 		/* Enqueue responsive navigation settings. */
-		wp_enqueue_script( 'toivo-settings', trailingslashit( get_template_directory_uri() ) . 'js/settings.js', array( 'toivo-navigation' ), TOIVO_VERSION, true );
+		wp_enqueue_script( 'toivo-settings', trailingslashit( get_template_directory_uri() ) . 'js/settings' . TOIVO_SUFFIX . '.js', array( 'toivo-navigation' ), TOIVO_VERSION, true );
 	}
 	
 	/* Enqueue functions. */
-	wp_enqueue_script( 'toivo-script', get_template_directory_uri() . '/js/functions.js', array(), TOIVO_VERSION, true );
+	wp_enqueue_script( 'toivo-script', get_template_directory_uri() . '/js/functions' . TOIVO_SUFFIX . '.js', array(), TOIVO_VERSION, true );
 	
 	/* Enqueue comment reply. */
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

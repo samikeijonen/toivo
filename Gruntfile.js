@@ -75,12 +75,6 @@ grunt.initConfig({
 				'js/settings.min.js': ['js/settings.js']
 			}
 		},
-		fluidvids: {
-			files: {
-				'js/fluidvids/fluidvids.min.js': ['js/fluidvids/fluidvids.js'],
-				'js/fluidvids/settings.min.js': ['js/fluidvids/settings.js']
-			}
-		},
 		settigns: {
 			files: {
 				'js/functions.min.js': ['js/functions.js'],
@@ -94,10 +88,6 @@ grunt.initConfig({
 		css: {
 			src: 'style.css',
 			dest: 'style.min.css'
-		},
-		cssrtl: {
-			src: 'style-rtl.css',
-			dest: 'style-rtl.min.css'
 		},
 		genericons: {
 			src: 'fonts/genericons/genericons/genericons.css',
@@ -173,7 +163,7 @@ grunt.initConfig({
 });
 
 // Default task.
-grunt.registerTask( 'default', [ 'makepot', 'rtlcss' ] );
+grunt.registerTask( 'default', [ 'makepot', 'rtlcss', 'uglify', 'cssmin' ] );
 
 // Build task(s).
 grunt.registerTask( 'build', [ 'clean', 'replace:styleVersion', 'replace:functionsVersion', 'copy', 'compress' ] );
