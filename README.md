@@ -26,8 +26,9 @@ All other resources and theme elements are licensed under the [GNU GPL](http://w
 
 ### Version 1.0.2 - April 19, 2015
 
-* Fix updater bug: I forgot to update version number in the updater.
-* Fix text domain and padding in testimonial archive page.
+* Tweak: Minify styles and scripts for faster loading times.
+* Fix: Update version number in the updater function.
+* Fix: Correct text domain and padding in testimonial archive page.
 * Update .pot file.
 * Change Foxnet to Foxland in the Footer.
 
