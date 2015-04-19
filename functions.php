@@ -8,7 +8,7 @@
 /**
  * The current version of the theme.
  */
-define( 'TOIVO_VERSION', '1.0.1' );
+define( 'TOIVO_VERSION', '1.0.2' );
 
 if ( ! function_exists( 'toivo_setup' ) ) :
 /**
