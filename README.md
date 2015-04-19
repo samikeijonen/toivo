@@ -24,6 +24,13 @@ All other resources and theme elements are licensed under the [GNU GPL](http://w
 
 ## Changelog
 
+### Version 1.0.2 - April 19, 2015
+
+* Fix updater bug: I forgot to update version number in the updater.
+* Fix text domain and padding in testimonial archive page.
+* Update .pot file.
+* Change Foxnet to Foxland in the Footer.
+
 ### Version 1.0.1 - April 17, 2015
 
 * Add footer section in the Customizer where you can hide or replace footer text.
