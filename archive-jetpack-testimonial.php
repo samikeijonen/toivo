@@ -45,9 +45,9 @@ get_header(); ?>
 			
 		<?php
 			the_posts_pagination( array(
-				'prev_text'          => __( 'Previous page', 'kuorinka' ),
-				'next_text'          => __( 'Next page', 'kuorinka' ),
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'kuorinka' ) . ' </span>',
+				'prev_text'          => __( 'Previous page', 'toivo' ),
+				'next_text'          => __( 'Next page', 'toivo' ),
+				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'toivo' ) . ' </span>',
 			) );
 		?>
 
