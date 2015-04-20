@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Toivo 1.0.0\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
-"POT-Creation-Date: 2015-04-19 08:41:40+00:00\n"
-"PO-Revision-Date: 2015-04-19 11:42+0200\n"
+"POT-Creation-Date: 2015-04-20 12:10:51+00:00\n"
+"PO-Revision-Date: 2015-04-20 15:11+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -83,7 +83,7 @@ msgstr "Avainsanat %s"
 #: content-audio.php:33 content-child-pages.php:33
 #: content-jetpack-portfolio.php:33 content-jetpack-testimonial.php:23
 #: content-jetpack-testimonial.php:68 content-link.php:42 content-page.php:29
-#: content-video.php:33 content.php:33 functions.php:268
+#: content-video.php:33 content.php:33 functions.php:277
 msgid "Read more %s"
 msgstr "Lue lisää %s"
 
@@ -134,18 +134,18 @@ msgstr "Voimanlähteenä %s"
 msgid "Theme %1$s by %2$s"
 msgstr "Teeman %1$s tekijä %2$s"
 
-#: functions.php:115
+#: functions.php:124
 msgid ""
 "The main sidebar. It is displayed on the right or left side of the page."
 msgstr ""
 "Päävimpainalue. Tähän liitetyt vimpaimet näkyvät sisällön oikealla tai "
 "vasemmalla puolella."
 
-#: functions.php:125
+#: functions.php:134
 msgid "A sidebar located in the footer of the site."
 msgstr "Sivupalkki sijaitsee alapalkissa."
 
-#: functions.php:135
+#: functions.php:144
 msgid "A sidebar located in the Front Page Template."
 msgstr "Tähän liitetyt vimpaimet näkyvät Etusivu-sivupohjassa."
 
@@ -161,7 +161,7 @@ msgstr "Valikko"
 msgid "Social"
 msgstr "Some"
 
-#: header.php:94
+#: header.php:98
 msgid "Breadcrumbs"
 msgstr "Murupolku"
 
@@ -381,6 +381,30 @@ msgstr "Alapalkin teksti"
 msgid "Enter Footer text which replaces default text."
 msgstr "Kirjoita sivun alareunassa oleva teksti, mikä korvaa oletustekstin."
 
+#: inc/meta-boxes.php:22
+msgid "Header Callout text"
+msgstr "Otsakkeen \"Callout\" teksti"
+
+#: inc/meta-boxes.php:42
+msgid ""
+"Replace header text with Callout text and description in singular views. "
+"Callout text field is required, others are optional."
+msgstr ""
+"Korvaa otsakkeen teksti \"Callout\"-tekstillä ja kuvauksella yksittäisillä "
+"sivuilla. Callout-teksti on pakollinen kenttä, muut ovat vapaaehtoisia."
+
+#: inc/meta-boxes.php:46
+msgid "Callout text (required)"
+msgstr "Callout-teksti (pakollinen)"
+
+#: inc/meta-boxes.php:52
+msgid "Callout URL"
+msgstr "Callout URL-linkki"
+
+#: inc/meta-boxes.php:58
+msgid "Callout description"
+msgstr "Callout-kuvaus"
+
 #: inc/template-tags.php:21
 msgid "Comment navigation"
 msgstr "Kommenttien selaus"
@@ -595,32 +619,32 @@ msgctxt "Separator in site info."
 msgid "&middot;"
 msgstr "&middot;"
 
-#: functions.php:56
+#: functions.php:65
 msgctxt "nav menu location"
 msgid "Primary"
 msgstr "Päävalikko"
 
-#: functions.php:57
+#: functions.php:66
 msgctxt "nav menu location"
 msgid "Top"
 msgstr "Ylhäällä"
 
-#: functions.php:58
+#: functions.php:67
 msgctxt "nav menu location"
 msgid "Social"
 msgstr "Some"
 
-#: functions.php:114
+#: functions.php:123
 msgctxt "sidebar"
 msgid "Primary"
 msgstr "Sivupalkki"
 
-#: functions.php:124
+#: functions.php:133
 msgctxt "sidebar"
 msgid "Subsidiary"
 msgstr "Sivupalkki alhaalla"
 
-#: functions.php:134
+#: functions.php:143
 msgctxt "sidebar"
 msgid "Front Page"
 msgstr "Etusivu"
@@ -628,7 +652,7 @@ msgstr "Etusivu"
 #. Translators: If there are characters in your language that are not
 #. * supported by Lato, translate this to 'off'. Do not translate
 #. * into your own language.
-#: functions.php:161
+#: functions.php:170
 msgctxt "Lato font: on or off"
 msgid "on"
 msgstr ""
@@ -636,12 +660,12 @@ msgstr ""
 #. Translators: If there are characters in your language that are not
 #. * supported by Raleway, translate this to 'off'. Do not translate
 #. * into your own language.
-#: functions.php:167
+#: functions.php:176
 msgctxt "Raleway font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:289
+#: functions.php:298
 msgctxt "dash before menu item description"
 msgid "&ndash;"
 msgstr "&ndash;"
