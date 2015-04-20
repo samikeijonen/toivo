@@ -39,7 +39,7 @@ function toivo_meta_box_display( $post, $metabox ) {
 	wp_nonce_field( basename( __FILE__ ), 'toivo-metabox-nonce' ); ?>
 	
 	</p>
-		<?php _e( 'Replace header text with Callout text and description in singular views. Callout text field is required, others are optional.', '' ) ?>
+		<?php _e( 'Replace header text with Callout text and description in singular views. Callout text field is required, others are optional.', 'toivo' ); ?>
 	</p>
 	
 	<p>
