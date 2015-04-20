@@ -21,7 +21,7 @@ $toivo_callout_description = get_post_meta( get_the_ID(), '_toivo_callout_descri
 			if( !empty( $toivo_callout_url ) ) :
 				$toivo_callout_text = '<a href="' . esc_url( $toivo_callout_url ) . '">' . esc_attr( $toivo_callout_text ) . '</a>';
 			else :
-				$toivo_callout_text =esc_html( $toivo_callout_text );
+				$toivo_callout_text = esc_attr( $toivo_callout_text );
 			endif;
 			
 			$toivo_callout_desc = !empty( $toivo_callout_description ) ? esc_attr( $toivo_callout_description ) : '';
