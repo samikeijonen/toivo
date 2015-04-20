@@ -54,9 +54,13 @@
 			<div class="site-branding">
 			
 				<?php
-					if ( !is_front_page() && !is_singular() && !is_404() ) : // If viewing a multi-post page
+					if ( !is_front_page() && !is_singular() && !is_404() ) : // If viewing a multi-post page.
 
 						get_template_part( 'loop', 'meta' ); // Loads the loop-meta.php template.
+						
+					elseif ( toivo_check_callout_output() ) : // If viewing singular page for Callout header text.
+						
+						get_template_part( 'loop', 'callout' ); // Loads the loop-callout.php template.
 						
 					else:
 					

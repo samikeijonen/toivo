@@ -8,7 +8,7 @@
 /**
  * The current version of the theme.
  */
-define( 'TOIVO_VERSION', '1.0.2' );
+define( 'TOIVO_VERSION', '1.0.3' );
 
 /**
  * The suffix to use for scripts.
@@ -436,6 +436,25 @@ function toivo_get_link_url() {
 }
 
 /**
+* Check if Callout text are set on singular pages header.
+*
+* @since  1.0.3
+* @return boolean
+*/
+function toivo_check_callout_output() {
+	
+	/* Get post meta for Callouts in singular pages. */
+	$toivo_callout_text = get_post_meta( get_the_ID(), '_toivo_callout_text', true );
+	
+	if( !empty( $toivo_callout_text ) && is_singular( apply_filters( 'toivo_when_to_show_callout_metaboxes', array( 'page', 'post', 'jetpack-portfolio', 'jetpack-testimonial' ) ) ) ) {
+		return true;
+	} else {
+		return false;
+	}
+
+}
+
+/**
  * Use a template for individual comment output.
  *
  * @param object $comment Comment to display.
@@ -496,3 +515,8 @@ require_once( get_template_directory() . '/inc/media-grabber.php' );
 if ( is_admin() ) {
 	require_once( trailingslashit ( get_template_directory() ) . 'theme-updater/theme-updater.php' );
 }
+
+/**
+ * Load meta boxes.
+ */
+require_once( get_template_directory() . '/inc/meta-boxes.php' );
