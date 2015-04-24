@@ -24,6 +24,10 @@ All other resources and theme elements are licensed under the [GNU GPL](http://w
 
 ## Changelog
 
+### Version 1.0.3 - April 24, 2015
+
+* Add metabox for replacing Header Callout text and description in singular views.
+
 ### Version 1.0.2 - April 19, 2015
 
 * Tweak: Minify styles and scripts for faster loading times.
