@@ -6,7 +6,7 @@
  */
 
 /**
- * Add custom meta box for 'page' post type.
+ * Add custom meta box for wanted post types. This can be filtered in filter 'toivo_when_to_show_callout_metaboxes'.
  *
  * @since 1.0.3
  * @return void
