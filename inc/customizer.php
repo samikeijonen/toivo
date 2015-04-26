@@ -350,7 +350,7 @@ function toivo_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'header_background_color_opacity',
 		array(
-			'default'           => 90,
+			'default'           => absint( apply_filters( 'toivo_default_bg_opacity', 70 ) ),
 			'sanitize_callback' => 'absint',
 		)
 	);
@@ -394,7 +394,7 @@ function toivo_customize_register( $wp_customize ) {
 			)
 		);
 		
-	/* Add custom header background color setting. */
+	/* Add subsidiary sidebar background color setting. */
 	$wp_customize->add_setting(
 		'subsidiary_sidebar_bg_color',
 		array(
@@ -403,7 +403,7 @@ function toivo_customize_register( $wp_customize ) {
 		)
 	);
 
-	/* Add custom header background color control. */
+	/* Add subsidiary sidebar background color control. */
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize,
 		'subsidiary_sidebar_bg_color',
 		array(
@@ -413,11 +413,11 @@ function toivo_customize_register( $wp_customize ) {
 		)
 	) );
 	
-	/* Add custom header background color opacity setting. */
+	/* Add subsidiary sidebar background color opacity setting. */
 	$wp_customize->add_setting(
 		'subsidiary_sidebar_bg_color_opacity',
 		array(
-			'default'           => 95,
+			'default'           => absint( apply_filters( 'toivo_default_subsidiary_sidebar_bg_opacity', 95 ) ),
 			'sanitize_callback' => 'absint',
 		)
 	);
@@ -564,12 +564,12 @@ function toivo_color_backgrounds_css() {
 	
 	/* Get header colors. */
 	$header_bg_color = get_theme_mod( 'header_background_color', '#3b5667' );
-	$header_bg_color_opacity = absint( get_theme_mod( 'header_background_color_opacity', 90 ) );
+	$header_bg_color_opacity = absint( get_theme_mod( 'header_background_color_opacity', absint( apply_filters( 'toivo_default_bg_opacity', 70 ) ) ) );
 	$header_bg_color_opacity = $header_bg_color_opacity / 100;
 	
 	/* Get subsidiary sidebar colors. */
 	$subsidiary_sidebar_bg_color = get_theme_mod( 'subsidiary_sidebar_bg_color', '#ffffff' );
-	$subsidiary_sidebar_bg_color_opacity = absint( get_theme_mod( 'subsidiary_sidebar_bg_color_opacity', 95 ) );
+	$subsidiary_sidebar_bg_color_opacity = absint( get_theme_mod( 'subsidiary_sidebar_bg_color_opacity', absint( apply_filters( 'toivo_default_subsidiary_sidebar_bg_opacity', 95 ) ) ) );
 	$subsidiary_sidebar_bg_color_opacity = $subsidiary_sidebar_bg_color_opacity / 100;
 
 	/* Convert hex color to rgba. */
@@ -586,7 +586,7 @@ function toivo_color_backgrounds_css() {
 	$background_arguments = esc_attr( apply_filters( 'toivo_subsidiary_sidebar_bg_arguments', 'no-repeat 50% 50%' ) );
 	
 	/* Header bg styles. */	
-	if ( '#3b5667' !== $header_bg_color || 90 !== $header_bg_color_opacity ) {
+	if ( '#3b5667' !== $header_bg_color || 70 !== $header_bg_color_opacity ) {
 			
 		$bg_color_css = "
 			.site-header,
