@@ -4,7 +4,7 @@ Theme URI: https://foxland.fi/downloads/toivo/
 Author: Sami Keijonen
 Author URI: https://foxland.fi
 Description: Toivo is perfect fit for business, personal or blog sites. It has beautiful Front Page template where you can show your important content, testimonials and Callout links. Toivo is an accessible, translation-ready theme which supports plenty of features like Right to Left languages and Schema.org microdata.
-Version: 1.0.3
+Version: 1.0.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: toivo
@@ -3197,7 +3197,6 @@ textarea {
 }
 
 .wp-caption-text,
-#colophon .site-info,
 input[type="number"],
 input[type="date"],
 input[type="datetime"],
@@ -3285,13 +3284,7 @@ body button#social-nav-toggle:focus {
 .breadcrumb-trail a,
 .breadcrumb-trail a:visited,
 .widget a,
-.widget a:visited,
-.site-info,
-.site-info a,
-.site-info a:visited,
-.site-info a:hover,
-.site-info a:focus,
-.site-info a:active {
+.widget a:visited {
 	color: #3b5667;
 }
 .breadcrumb-trail a:hover,
@@ -3307,7 +3300,12 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 .entry a.portfolio-item-link,
-body #infinite-handle span {
+body #infinite-handle span,
+.site-info a,
+.site-info a:visited,
+.site-info a:hover,
+.site-info a:focus,
+.site-info a:active {
 	color: #303030;
 }
 
@@ -3448,7 +3446,7 @@ body .mejs-container .mejs-controls  {
 	background-color: transparent;
 }
 .custom-header-image .site-header > .wrap::before {
-	background-color: rgba(59,86,103,0.90);
+	background-color: rgba(59,86,103,0.70);
 }
 
 pre {
@@ -3743,3 +3741,4 @@ a.toivo-button {
 	}
 
 }
+
