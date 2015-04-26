@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Toivo 1.0.3\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
-"POT-Creation-Date: 2015-04-24 15:18:48+00:00\n"
+"POT-Creation-Date: 2015-04-26 09:33:19+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -142,12 +142,12 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:33 menu-primary.php:11
-msgid "Menu"
+#: header.php:33 menu-top.php:11 menu-top.php:12
+msgid "Top Menu"
 msgstr ""
 
-#: header.php:37
-msgid "Social"
+#: header.php:37 menu-social.php:11 menu-social.php:12
+msgid "Social Menu"
 msgstr ""
 
 #: header.php:98
@@ -409,16 +409,12 @@ msgstr ""
 msgid "Check out our latest work"
 msgstr ""
 
+#: menu-primary.php:11
+msgid "Menu"
+msgstr ""
+
 #: menu-primary.php:13 menu-primary.php:14
 msgid "Primary Menu"
-msgstr ""
-
-#: menu-social.php:11 menu-social.php:12
-msgid "Social Menu"
-msgstr ""
-
-#: menu-top.php:11 menu-top.php:12
-msgid "Top Menu"
 msgstr ""
 
 #: single.php:17

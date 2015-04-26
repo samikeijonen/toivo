@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Toivo 1.0.0\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
-"POT-Creation-Date: 2015-04-24 15:18:48+00:00\n"
-"PO-Revision-Date: 2015-04-24 18:19+0200\n"
+"POT-Creation-Date: 2015-04-26 09:33:19+00:00\n"
+"PO-Revision-Date: 2015-04-26 12:35+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -153,13 +153,13 @@ msgstr "Tähän liitetyt vimpaimet näkyvät Etusivu-sivupohjassa."
 msgid "Skip to content"
 msgstr "Hyppää sisältöön"
 
-#: header.php:33 menu-primary.php:11
-msgid "Menu"
-msgstr "Valikko"
+#: header.php:33 menu-top.php:11 menu-top.php:12
+msgid "Top Menu"
+msgstr "Ylävalikko"
 
-#: header.php:37
-msgid "Social"
-msgstr "Some"
+#: header.php:37 menu-social.php:11 menu-social.php:12
+msgid "Social Menu"
+msgstr "Somevalikko"
 
 #: header.php:98
 msgid "Breadcrumbs"
@@ -429,17 +429,13 @@ msgstr "Portfolio"
 msgid "Check out our latest work"
 msgstr "Esittelyssä meidän viimeisimmät työt"
 
+#: menu-primary.php:11
+msgid "Menu"
+msgstr "Valikko"
+
 #: menu-primary.php:13 menu-primary.php:14
 msgid "Primary Menu"
 msgstr "Päävalikko"
-
-#: menu-social.php:11 menu-social.php:12
-msgid "Social Menu"
-msgstr "Somevalikko"
-
-#: menu-top.php:11 menu-top.php:12
-msgid "Top Menu"
-msgstr "Ylävalikko"
 
 #: single.php:17
 msgid "Next"
