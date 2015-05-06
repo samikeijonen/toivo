@@ -8,7 +8,7 @@
 /**
  * The current version of the theme.
  */
-define( 'TOIVO_VERSION', '1.0.4' );
+define( 'TOIVO_VERSION', '1.0.5' );
 
 /**
  * The suffix to use for scripts.
@@ -223,6 +223,10 @@ function toivo_scripts() {
 	
 	/* Enqueue functions. */
 	wp_enqueue_script( 'toivo-script', get_template_directory_uri() . '/js/functions' . TOIVO_SUFFIX . '.js', array(), TOIVO_VERSION, true );
+	wp_localize_script( 'toivo-script', 'screenReaderText', array(
+		'expand'   => '<span class="screen-reader-text">' . __( 'Expand child menu', 'toivo' ) . '</span>',
+		'collapse' => '<span class="screen-reader-text">' . __( 'Collapse child menu', 'toivo' ) . '</span>',
+	) );
 	
 	/* Enqueue comment reply. */
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
