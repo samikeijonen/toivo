@@ -4,7 +4,7 @@ Theme URI: https://foxland.fi/downloads/toivo/
 Author: Sami Keijonen
 Author URI: https://foxland.fi
 Description: Toivo is perfect fit for business, personal or blog sites. It has beautiful Front Page template where you can show your important content, testimonials and Callout links. Toivo is an accessible, translation-ready theme which supports plenty of features like Right to Left languages and Schema.org microdata.
-Version: 1.0.4
+Version: 1.0.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: toivo
@@ -685,6 +685,7 @@ a[href^="tel:"]::before,
 .nav-toggle:before,
 button#top-nav-toggle:before,
 button#social-nav-toggle:before,
+.dropdown-toggle:after,
 .featured-post:before,
 .byline .entry-author a::before,
 .entry-date a::before,
@@ -990,6 +991,7 @@ button#nav-toggle {
 	.main-navigation li {
 		width: 100%;
 		display: block;
+		position: relative;
 	}
 	
 	button#nav-toggle {
@@ -1019,19 +1021,32 @@ button#nav-toggle {
 		padding-left: 13%;
 	}
 
-	.js .main-navigation {
+	.js .main-navigation,
+	.js .main-navigation .sub-menu {
 		clip: rect(0 0 0 0);
 		max-height: 0;
 		position: absolute;
 		display: block;
 		overflow: hidden;
 		zoom: 1;
+		-webkit-transition: 5s;  
+		-moz-transition: 5s;
+		-ms-transition: 5s;
+		-o-transition: 5s;
+		transition: 5s;
 	}
 
-	.main-navigation.opened {
-		max-height: 9999px;
+	.main-navigation.opened,
+	html.js .main-navigation.opened,
+	.main-navigation .sub-menu.toggled {
+		max-height: 9999px !important;
 	}
-
+	
+	.main-navigation.opened,
+	.main-navigation .sub-menu.toggled {
+		position: relative;
+	}
+		
 	.disable-pointer-events {
 		pointer-events: none !important;
 	}
@@ -1058,6 +1073,30 @@ button#nav-toggle {
 	button#nav-toggle.active:before {
 		content: "\f405";
 	}
+	
+	.dropdown-toggle {
+		content: "";
+		height: auto;
+		padding: 0;
+		position: absolute;
+		margin: 0;
+		text-transform: lowercase; /* Stop screen readers to read the text as capital letters */
+		top: -1px;
+		right: 4%;
+	}
+
+	.dropdown-toggle:after {
+		content: "\f431";
+		font-size: 24px;
+		padding: 11px;
+		position: relative;
+		top: 0;
+		left: 1px;
+	}
+
+	.dropdown-toggle.toggled:after {
+		content: "\f432";
+	}
 
 }
 
@@ -1071,7 +1110,8 @@ button#nav-toggle {
 	}
 
 	#nav-toggle,
-	.menu-item-description-mark {
+	.menu-item-description-mark,
+	.dropdown-toggle {
 		display: none;
 	}
 	
@@ -3358,6 +3398,22 @@ button#nav-toggle.focus,
 	}
 	button#nav-toggle.active {
 		border-bottom: 1px solid #ddd;
+	}
+	
+	.dropdown-toggle {
+		background-color: transparent;
+		border: none;
+		border-left: 1px solid #ddd;
+		border-right: 1px solid #ddd;
+		color: #777;
+	}
+	.dropdown-toggle:hover,
+	.dropdown-toggle:active,
+	.dropdown-toggle:focus {
+		background-color: #525e66;
+	}
+	.dropdown-toggle:focus {
+		outline: 0;
 	}
 
 }
