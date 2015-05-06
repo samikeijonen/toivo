@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Toivo 1.0.3\n"
+"Project-Id-Version: Toivo 1.0.5\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
-"POT-Creation-Date: 2015-04-26 09:33:19+00:00\n"
+"POT-Creation-Date: 2015-05-06 20:19:12+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -78,7 +78,7 @@ msgstr ""
 #: content-audio.php:33 content-child-pages.php:33
 #: content-jetpack-portfolio.php:33 content-jetpack-testimonial.php:23
 #: content-jetpack-testimonial.php:68 content-link.php:42 content-page.php:29
-#: content-video.php:33 content.php:33 functions.php:277
+#: content-video.php:33 content.php:33 functions.php:281
 #. translators: %s: Name of current post
 #. Translators: The %s is the post title shown to screen readers.
 msgid "Read more %s"
@@ -136,6 +136,14 @@ msgstr ""
 
 #: functions.php:144
 msgid "A sidebar located in the Front Page Template."
+msgstr ""
+
+#: functions.php:227
+msgid "Expand child menu"
+msgstr ""
+
+#: functions.php:228
+msgid "Collapse child menu"
 msgstr ""
 
 #: header.php:26
@@ -629,7 +637,7 @@ msgctxt "Raleway font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:298
+#: functions.php:302
 msgctxt "dash before menu item description"
 msgid "&ndash;"
 msgstr ""

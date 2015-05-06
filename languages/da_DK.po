@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Toivo 1.0.3\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
 "POT-Creation-Date: 2015-04-26 09:33:19+00:00\n"
-"PO-Revision-Date: 2015-04-26 12:35+0200\n"
+"PO-Revision-Date: 2015-04-29 22:24+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: \n"
 "Language: da_DK\n"
@@ -61,11 +61,11 @@ msgstr "Din kommentar afventer modifikation."
 
 #: comments.php:29
 msgid "Leave a comment"
-msgstr "Tilføj en kommentar"
+msgstr "Efterlad en kommentar"
 
 #: comments.php:63
 msgid "Comments are closed."
-msgstr "Kommentarer er lukket."
+msgstr "Der er lukket for kommentarer"
 
 #: content-aside.php:28 content-audio.php:47 content-link.php:50
 #: content-status.php:30 content-video.php:47 content.php:47
@@ -119,8 +119,8 @@ msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
-"﻿Det lader til at vi ikke kan finde det du leder efter. Måske en søgning kan "
-"hjælpe dig videre."
+"Det ser ikke ud til, at vi kan finde det du søger. Søgefunktionen kan måske "
+"hjælpe."
 
 #: footer.php:34
 msgid "http://wordpress.org/"
@@ -153,10 +153,12 @@ msgid "Skip to content"
 msgstr "Gå til indhold"
 
 #: header.php:33 menu-top.php:11 menu-top.php:12
+#, fuzzy
 msgid "Top Menu"
 msgstr "Top Menu"
 
 #: header.php:37 menu-social.php:11 menu-social.php:12
+#, fuzzy
 msgid "Social Menu"
 msgstr "Social Menu"
 
@@ -240,11 +242,11 @@ msgstr ""
 
 #: inc/customizer.php:112
 msgid "%s Callout title"
-msgstr "%s Udråb Titel"
+msgstr "%s Udråb titel"
 
 #: inc/customizer.php:132
 msgid "%s Callout text"
-msgstr "%s Udråb Tekst"
+msgstr "%s Udråb tekst"
 
 #: inc/customizer.php:152
 msgid "%s Callout URL"
@@ -345,7 +347,7 @@ msgstr "Sekundær Sidekolonne Baggrundsfarve"
 
 #: inc/customizer.php:431
 msgid "Subsidiary Sidebar Background Color Opacity."
-msgstr "Sekundær Sidekolonne Baggrundfarve Gennemsigtighed."
+msgstr "Sekundær Sidekolonne Baggrundsfarve Gennemsigtighed."
 
 #: inc/customizer.php:432
 msgid "Set Subsidiary Sidebar Background Color Opacity."
@@ -522,7 +524,7 @@ msgstr "Licensen er inaktiv."
 
 #: theme-updater/theme-updater.php:45
 msgid "License key is disabled."
-msgstr "Licensnøgle er inaktiv."
+msgstr "Licensnøgle er deaktiveret."
 
 #: theme-updater/theme-updater.php:46
 msgid "Site is inactive."
@@ -618,9 +620,10 @@ msgstr ""
 #: functions.php:65
 msgctxt "nav menu location"
 msgid "Primary"
-msgstr "Primær"
+msgstr "Primær (menu)"
 
 #: functions.php:66
+#, fuzzy
 msgctxt "nav menu location"
 msgid "Top"
 msgstr "Top"
@@ -633,7 +636,7 @@ msgstr "Sociale"
 #: functions.php:123
 msgctxt "sidebar"
 msgid "Primary"
-msgstr "Primær"
+msgstr "Primær (sidekolonne)"
 
 #: functions.php:133
 msgctxt "sidebar"
