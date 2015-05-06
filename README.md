@@ -24,6 +24,11 @@ All other resources and theme elements are licensed under the [GNU GPL](http://w
 
 ## Changelog
 
+### Version 1.0.5 - May 6, 2015
+
+* Remove example.html file from Genericons for security (DOM-based XSS) reasons.
+* Update submenus in Primary menu for enabling toggle support.
+
 ### Version 1.0.4 - April 26, 2015
 
 * Change footer text colors for passing #a11y tests.
