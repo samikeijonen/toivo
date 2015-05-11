@@ -4,7 +4,7 @@ Theme URI: https://foxland.fi/downloads/toivo/
 Author: Sami Keijonen
 Author URI: https://foxland.fi
 Description: Toivo is perfect fit for business, personal or blog sites. It has beautiful Front Page template where you can show your important content, testimonials and Callout links. Toivo is an accessible, translation-ready theme which supports plenty of features like Right to Left languages and Schema.org microdata.
-Version: 1.0.5
+Version: 1.0.6
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: toivo
@@ -1523,6 +1523,8 @@ button#nav-toggle {
 #menu-social li a[href*="reddit.com"]::before,
 #menu-social li a[href*="skype.com"]::before,
 #menu-social li a[href*="skype:"]::before,
+#menu-social li a[href*="soundcloud.com"]::before,
+#menu-social li a[href*="spotify.com"]::before,
 #menu-social li a[href*="stumbleupon.com"]::before,
 #menu-social li a[href*="tumblr.com"]::before,
 #menu-social li a[href*="twitter.com"]::before,
@@ -1577,6 +1579,12 @@ button#nav-toggle {
 #menu-social li a[href*="skype.com"]::before,
 #menu-social li a[href*="skype:"]::before {
 	content: '\f220';
+}
+#menu-social li a[href*="soundcloud.com"]::before {
+	content: '\f426';
+}
+#menu-social li a[href*="spotify.com"]::before {
+	content: '\f515';
 }
 #menu-social li a[href*="stumbleupon.com"]::before {
 	content: '\f223';
@@ -1671,6 +1679,16 @@ button#nav-toggle {
 #menu-social li a[href*="skype:"]:focus::before,
 #menu-social li a[href*="skype:"]:active::before {
 	color: #00aff0;
+}
+#menu-social li a[href*="soundcloud.com"]:hover::before,
+#menu-social li a[href*="soundcloud.com"]:focus::before,
+#menu-social li a[href*="soundcloud.com"]:active::before  {
+	color: #ff5000;
+}
+#menu-social li a[href*="spotify.com"]:hover::before,
+#menu-social li a[href*="spotify.com"]:focus::before,
+#menu-social li a[href*="spotify.com"]:active::before {
+	color: #1ed760;
 }
 #menu-social li a[href*="stumbleupon.com"]:hover::before,
 #menu-social li a[href*="stumbleupon.com"]:focus::before,

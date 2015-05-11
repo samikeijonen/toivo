@@ -24,6 +24,10 @@ All other resources and theme elements are licensed under the [GNU GPL](http://w
 
 ## Changelog
 
+### Version 1.0.6 - May 11, 2015
+
+* Add support for Spotify and Soundcloud in Social menu.
+
 ### Version 1.0.5 - May 6, 2015
 
 * Remove example.html file from Genericons for security (DOM-based XSS) reasons.
