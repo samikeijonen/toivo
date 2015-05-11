@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Toivo 1.0.0\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
-"POT-Creation-Date: 2015-04-26 09:33:19+00:00\n"
-"PO-Revision-Date: 2015-04-26 12:35+0200\n"
+"POT-Creation-Date: 2015-05-11 18:05:05+00:00\n"
+"PO-Revision-Date: 2015-05-11 21:08+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -83,7 +83,7 @@ msgstr "Avainsanat %s"
 #: content-audio.php:33 content-child-pages.php:33
 #: content-jetpack-portfolio.php:33 content-jetpack-testimonial.php:23
 #: content-jetpack-testimonial.php:68 content-link.php:42 content-page.php:29
-#: content-video.php:33 content.php:33 functions.php:277
+#: content-video.php:33 content.php:33 functions.php:281
 msgid "Read more %s"
 msgstr "Lue lisää %s"
 
@@ -148,6 +148,14 @@ msgstr "Sivupalkki sijaitsee alapalkissa."
 #: functions.php:144
 msgid "A sidebar located in the Front Page Template."
 msgstr "Tähän liitetyt vimpaimet näkyvät Etusivu-sivupohjassa."
+
+#: functions.php:227
+msgid "Expand child menu"
+msgstr "Avaa alavalikko"
+
+#: functions.php:228
+msgid "Collapse child menu"
+msgstr "Sulje alavalikko"
 
 #: header.php:26
 msgid "Skip to content"
@@ -661,7 +669,7 @@ msgctxt "Raleway font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:298
+#: functions.php:302
 msgctxt "dash before menu item description"
 msgid "&ndash;"
 msgstr "&ndash;"
