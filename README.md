@@ -6,6 +6,13 @@ It has beautiful Front Page template where you can show your important content, 
 
 Toivo is an accessible, translation-ready theme which supports plenty of features like Site Logo and Schema.org microdata.
 
+## Documentation
+
+Theme has couple of features you should be aware of. You can read documentation in Foxland site.
+
+* [Features documentation](https://foxland.fi/docs/toivo-theme-documentation/)
+* [All documentations](https://foxland.fi/documents/for/toivo/)
+
 ## Copyright and License
 
 The following resources are not included with the theme but are external resources linked to within the theme.
