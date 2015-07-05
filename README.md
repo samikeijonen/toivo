@@ -34,6 +34,7 @@ All other resources and theme elements are licensed under the [GNU GPL](http://w
 ### Version 1.0.7 - July 5, 2015
 
 * Fix: You can now use several videos in video post format.
+* Tweak: Much smoother top and social menu experience.
 * Tweak: Add 'toivo-theme' body class. We use this for styling purposes.
 
 ### Version 1.0.6 - May 11, 2015
