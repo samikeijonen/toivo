@@ -338,6 +338,9 @@ function toivo_extra_layout_classes( $classes ) {
 		$classes[] = 'group-blog';
 	}
 	
+	/* Add 'toivo-theme' class so that we know this is Pro version. We use it for some styling differences. */
+	$classes[] = 'toivo-theme';
+	
     return $classes;
 	
 }
