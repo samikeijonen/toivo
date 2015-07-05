@@ -1327,6 +1327,10 @@ button#nav-toggle {
 	text-transform: uppercase;
 }
 
+.social-navigation ul {
+	margin: 0;
+}
+
 @media screen and (max-width: 1199px) {
 
 	.top-navigation ul,
@@ -1402,16 +1406,20 @@ button#nav-toggle {
 	.top-navigation.opened,
 	.social-navigation.opened {
 		clear: both;
-		margin-bottom: 80px;
 		max-height: 9999px;
 	}
-	.social-navigation.opened {
-		padding-top: 40px;
+
+	.social-navigation ul {
+		padding: 40px 4%;
+	}
+	
+	.has-site-logo .top-navigation ul,
+	.has-site-logo .social-navigation ul {
 		padding-bottom: 80px;
 	}
-	.top-navigation.opened + .social-navigation.opened {
-		padding-top: 0;
-		margin-top: -40px;
+	.has-site-logo .social-navigation ul {
+		padding-bottom: 80px;
+		padding-top: 40px;
 	}
 
 	.disable-pointer-events {
@@ -1487,13 +1495,11 @@ button#nav-toggle {
 
 #menu-social ul {
 	list-style: none;
-	padding: 0;
-	margin: 0;
 }
 
 #menu-social ul li {
 	display: inline-block;
-	margin: 0 5px;
+	margin: 0 5px 5px;
 }
 
 #menu-social li a::before {
