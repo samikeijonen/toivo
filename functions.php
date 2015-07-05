@@ -8,7 +8,7 @@
 /**
  * The current version of the theme.
  */
-define( 'TOIVO_VERSION', '1.0.6' );
+define( 'TOIVO_VERSION', '1.0.7' );
 
 /**
  * The suffix to use for scripts.
