@@ -31,6 +31,11 @@ All other resources and theme elements are licensed under the [GNU GPL](http://w
 
 ## Changelog
 
+### Version 1.0.7.1 - July 7, 2015
+
+* Fix: Small css bug on social menu.
+* Tweak: Use https to load Google fonts.
+
 ### Version 1.0.7 - July 5, 2015
 
 * Fix: You can now use several videos in video post format.
