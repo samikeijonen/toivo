@@ -15,7 +15,7 @@ $updater = new EDD_Theme_Updater_Admin(
 
 	// Config settings
 	$config = array(
-		'remote_api_url' => 'https://foxland.fi', // Site where EDD is hosted
+		'remote_api_url' => 'https://hexagone.io', // Site where EDD is hosted
 		'item_name'      => 'Toivo',              // Name of theme
 		'theme_slug'     => 'toivo',              // Theme slug
 		'version'        => TOIVO_VERSION,        // The current version of this theme
