@@ -1,24 +1,23 @@
 # Toivo
 
-Toivo is perfect fit for business, personal, portfolio or blog sites.
+Toivo est un thème parfait pour les entreprises, les sites perso, de portfolio ou de blogging.
 
-It has beautiful Front Page template where you can show your important content, portfolio, testimonials and Callout links.
+Il utilise un puissant modèle de Page d’accueil qui vous permet d’afficher votre contenu important, votre portfolio, les témoignages de vos clients et un système d’appel à l’action.
 
-Toivo is an accessible, translation-ready theme which supports plenty of features like Site Logo and Schema.org microdata.
+Il prend en charge l'accessibilité, traduit en français et supporte de nombreuses fonctionnalités comme les logo de site et les microdonnées de Schema.org
 
 ## Documentation
 
-Theme has couple of features you should be aware of. You can read documentation in Foxland site.
+Theme has couple of features you should be aware of. You can read documentation in Foxland site. Le thème à de nombreuses fonctionnalités que vous pourrez retrouver explicitées dans la documentation
 
-* [Features documentation](https://foxland.fi/docs/toivo-theme-documentation/)
-* [All documentations](https://foxland.fi/documents/for/toivo/)
+* [Documentation](https://hexagone.io/documentation/toivo/)
 
 ## Copyright and License
 
 The following resources are not included with the theme but are external resources linked to within the theme.
 
-* [Lato](https://www.google.com/fonts/specimen/Lato) by Łukasz Dziedzic - Licensed under the [SIL Open Font License, version 1.1](http://scripts.sil.org/OFL).
-* [Raleway](https://www.google.com/fonts/specimen/Raleway) by Multiple Designers - Licensed under the [SIL Open Font License, version 1.1](http://scripts.sil.org/OFL).
+* [Lato](https://www.google.com/fonts/specimen/Lato) par Łukasz Dziedzic - Licensed under the [SIL Open Font License, version 1.1](http://scripts.sil.org/OFL).
+* [Raleway](https://www.google.com/fonts/specimen/Raleway) par Multiple Designers - Licensed under the [SIL Open Font License, version 1.1](http://scripts.sil.org/OFL).
 
 The following resources are included within the theme package.
 
@@ -31,53 +30,54 @@ All other resources and theme elements are licensed under the [GNU GPL](http://w
 
 ## Changelog
 
-### Version 1.0.7.1 - July 7, 2015
+### Version 1.0.7.1 - 7 juillet 2015
 
-* Fix: Small css bug on social menu.
-* Tweak: Use https to load Google fonts.
+* Correction css : Petit bug dans le menu social.
+* Modif : Use https pour charger les Google fonts.
 
-### Version 1.0.7 - July 5, 2015
+### Version 1.0.7 - 5 juillet 2015
 
-* Fix: You can now use several videos in video post format.
-* Tweak: Much smoother top and social menu experience.
-* Tweak: Add 'toivo-theme' body class. We use this for styling purposes.
+* Correction : Vous pouvez maintenant utiliser de nombreuses vidéos dans le type d'article vidéo.
+* Modif : Amélioration du rendu des menus du haut et social.
+* Modif : Ajout de la body classe 'toivo-theme'. Nous l'utilisons pour styliser le thème.
 
-### Version 1.0.6 - May 11, 2015
+### Version 1.0.6 - 11 mai 2015
 
-* Add support for Spotify and Soundcloud in Social menu.
+* Partenariat et gestion du français par Hexagone.
+* Ajout de la prise en charge de Spotify et SoundCloud dans le menu social.
 
-### Version 1.0.5 - May 6, 2015
+### Version 1.0.5 - 6 mai 2015
 
-* Remove example.html file from Genericons for security (DOM-based XSS) reasons.
-* Update submenus in Primary menu for enabling toggle support.
+* Suppression du fichier example.html de Genericons pour des raisons de sécurité (DOM-based XSS)
+* Mise à jour du sous-menu dans le menu principal pour permettre de permuter.
 
-### Version 1.0.4 - April 26, 2015
+### Version 1.0.4 - 26 avril 2015
 
-* Change footer text colors for passing #a11y tests.
-* Change default header image color opacity to 70 and add filters around it.
-* Add filter around footer image color opacity.
-* Add better labels for Menu buttons: Top Menu and Social Menu. Primary Menu is just labeled as Menu.
-* Update language files.
-* Remove Twenty Fifteen reference in inc/template-tags.php.
+* Changement des couleurs du pied de page pour passer les tests d'#a11y
+* Changement de l'opacité par défaut de la couleur de l'en-tête à 70 et ajout d'un filtre autour.
+* Ajout d'un filtre autour de l'opacité de l'image du pied de page.
+* Ajout de meilleurs libellés des boutons de menu : menu du haut et social. Le menu principal s'appelle simplement Menu.
+* Maj des fichiers de langues.
+* Suppression de la référence à Tweenty Fifteen dans inc/template-tags.php.
 
-### Version 1.0.3 - April 24, 2015
+### Version 1.0.3 - 24 avril 2015
 
-* Add metabox for replacing Header Callout text and description in singular views.
+* Ajout de boîtes à métadonnées pour remplacer le texte et la description de la Légende dans les vues uniques.
 
-### Version 1.0.2 - April 19, 2015
+### Version 1.0.2 - 19 avril 2015
 
-* Tweak: Minify styles and scripts for faster loading times.
-* Fix: Update version number in the updater function.
-* Fix: Correct text domain and padding in testimonial archive page.
-* Update .pot file.
-* Change Foxnet to Foxland in the Footer.
+* Modif : Minification des styles et des scripts pour améliorer le temps de chargement.
+* Correction : Mise à jour du numéro de version dans la fonction de l'updater.
+* Correction : Correction du text domain et du padding dans la page d'archive des témoignages.
+* Maj du fichier .pot.
+* Changement de Foxnet par Foxland dans le pied de page.
 
-### Version 1.0.1 - April 17, 2015
+### Version 1.0.1 - 17 avril 2015
 
-* Add footer section in the Customizer where you can hide or replace footer text.
-* Add Danish translations. Thanks to [Reinar](http://www.reinar-svendsen).
-* CSS tweak: add default top margin to site branding if there is no logo set.
+* Ajout de la section pied de page dans le Customizer pour pouvoir cacher ou remplacer le texte du pied de page.
+* Ajout de la traduction Danoise. Merci à [Reinar](http://www.reinar-svendsen).
+* Modif css : ajout d'un top margin par défaut au titre du site s'il n'y a pas de logo.
 
-### Version 1.0.0 - April 17, 2015
+### Version 1.0.0 - 17 avril 2015
 
-* Everything's new!
+* Tout est nouveau !
