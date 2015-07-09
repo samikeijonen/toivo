@@ -81,6 +81,26 @@ grunt.initConfig({
 				}
 			},
 
+		dirs: {
+			lang: 'languages',  // It should be languages or lang
+		},
+
+		potomo: {
+			dist: {
+				options: {
+				poDel: false // Set to true if you want to erase the .po
+				},
+				files: [{
+					expand: true,
+					cwd: '<%= dirs.lang %>',
+					src: ['*.po'],
+					dest: '<%= dirs.lang %>',
+					ext: '.mo',
+					nonull: true
+				}]
+			}
+		},
+
 		// Right to left styles
 		rtlcss: {
 			options: {
@@ -220,7 +240,7 @@ grunt.initConfig({
 });
 
 // Default task.
-grunt.registerTask( 'default', [ 'checktextdomain', 'makepot', 'rtlcss', 'uglify', 'cssmin' ] );
+grunt.registerTask( 'default', [ 'checktextdomain', 'makepot', 'potomo', 'rtlcss', 'uglify', 'cssmin' ] );
 
 // Build task(s).
 grunt.registerTask( 'build', [ 'clean', 'replace:styleVersion', 'replace:functionsVersion', 'copy', 'compress' ] );
