@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Toivo 1.0.3\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
-"POT-Creation-Date: 2015-05-11 18:05:05+00:00\n"
+"POT-Creation-Date: 2015-07-09 07:40:21+00:00\n"
 "PO-Revision-Date: 2015-05-11 21:08+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: \n"
@@ -573,14 +573,6 @@ msgid ""
 "microdata."
 msgstr ""
 
-#. Author of the plugin/theme
-msgid "Sami Keijonen"
-msgstr ""
-
-#. Author URI of the plugin/theme
-msgid "https://foxland.fi"
-msgstr ""
-
 #. Template Name of the plugin/theme
 #, fuzzy
 msgid "Front Page"
@@ -656,17 +648,16 @@ msgctxt "sidebar"
 msgid "Front Page"
 msgstr "Forreste Side"
 
-#. Translators: If there are characters in your language that are not
-#. * supported by Lato, translate this to 'off'. Do not translate
-#. * into your own language.
+#. Translators: If there are characters in your language that are not supported
+#. by Lato, translate this to 'off'. Do not translate into your own language.
 #: functions.php:170
 msgctxt "Lato font: on or off"
 msgid "on"
 msgstr ""
 
-#. Translators: If there are characters in your language that are not
-#. * supported by Raleway, translate this to 'off'. Do not translate
-#. * into your own language.
+#. Translators: If there are characters in your language that are not supported
+#. by Raleway, translate this to 'off'. Do not translate into your own
+#. language.
 #: functions.php:176
 msgctxt "Raleway font: on or off"
 msgid "on"
