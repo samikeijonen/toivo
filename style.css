@@ -1040,18 +1040,20 @@ button#nav-toggle {
 		transition: 5s;
 	}
 
-	.main-navigation.opened {
+	.main-navigation.opened,
+	.toivo-theme .main-navigation .sub-menu.toggled {
 		max-height: 9999px;
+		position: relative;
 	}
 	
 	html.js .toivo-theme .main-navigation.opened,
 	.toivo-theme .main-navigation .sub-menu.toggled {
-		max-height: 9999px !important;
+		max-height: 9999px;
 	}
 	
-	.toivo-theme .main-navigation.opened,
-	.toivo-theme .main-navigation .sub-menu.toggled {
-		position: relative;
+	/* Enable active class to let the navigation expand over the calculated max height. */
+	.main-navigation.opened.dropdown-active {
+		max-height: 9999px !important;
 	}
 		
 	.disable-pointer-events {
@@ -2151,7 +2153,7 @@ body .search-submit {
 	padding-right: 16px;
 }
 
-.layout-1c .breadcrumb-trail {
+.breadcrumb-trail {
 	text-align: center;
 }
 
@@ -2412,7 +2414,8 @@ body #infinite-handle,
 	.layout-2c-l .breadcrumb-trail,
 	.layout-2c-r .breadcrumb-trail {
 		padding-left: 0;
-		padding-right: 0;		
+		padding-right: 0;
+		text-align: left;
 	}
 
 }
