@@ -46,7 +46,7 @@ $updater = new EDD_Theme_Updater_Admin(
 		'site-is-inactive'          => __( 'Site is inactive.', 'toivo' ),
 		'license-status-unknown'    => __( 'License status is unknown.', 'toivo' ),
 		'update-notice'             => __( "Updating this theme will lose any customizations you have made. 'Cancel' to stop, 'OK' to update.", 'toivo' ),
-		'update-available'          => __('<strong>%1$s %2$s</strong> is available. <a href="%3$s" class="thickbox" title="%4s">Check out what\'s new</a> or <a href="%5$s"%6$s>update now</a>.', 'toivo' )
+		'update-available'          => __( '<strong>%1$s %2$s</strong> is available. <a href="%3$s" class="thickbox" title="%4s">Check out what\'s new</a> or <a href="%5$s"%6$s>update now</a>.', 'toivo' )
 	)
 
 );
