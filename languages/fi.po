@@ -4,15 +4,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Toivo 1.0.0\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
-"POT-Creation-Date: 2015-05-11 18:05:05+00:00\n"
-"PO-Revision-Date: 2015-05-11 21:08+0200\n"
+"POT-Creation-Date: 2015-07-29 19:57+0300\n"
+"PO-Revision-Date: 2015-07-29 19:58+0300\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: \n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.5\n"
+"X-Generator: Poedit 1.8.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: 404.php:15
@@ -173,40 +173,40 @@ msgstr "Somevalikko"
 msgid "Breadcrumbs"
 msgstr "Murupolku"
 
-#: inc/breadcrumb-trail.php:177
+#: inc/breadcrumb-trail.php:244
 msgid "Browse:"
 msgstr "Navigointi:"
 
-#: inc/breadcrumb-trail.php:178
+#: inc/breadcrumb-trail.php:246
 msgid "Home"
 msgstr "Etusivu"
 
-#: inc/breadcrumb-trail.php:179
+#: inc/breadcrumb-trail.php:247
 msgid "404 Not Found"
 msgstr "404 Sivua ei löytynyt"
 
-#: inc/breadcrumb-trail.php:180
+#: inc/breadcrumb-trail.php:248
 msgid "Archives"
 msgstr "Arkistot"
 
 #. Translators: %s is the search query. The HTML entities are opening and
 #. closing curly quotes.
-#: inc/breadcrumb-trail.php:182 loop-meta.php:17
+#: inc/breadcrumb-trail.php:250 loop-meta.php:17
 msgid "Search results for &#8220;%s&#8221;"
 msgstr "Hakutulokset haulle  &#8220;%s&#8221;"
 
 #. Translators: %s is the page number.
-#: inc/breadcrumb-trail.php:184
+#: inc/breadcrumb-trail.php:252
 msgid "Page %s"
 msgstr "Sivu %s"
 
 #. Translators: Minute archive title. %s is the minute time format.
-#: inc/breadcrumb-trail.php:186
+#: inc/breadcrumb-trail.php:254
 msgid "Minute %s"
 msgstr "Minuutti %s"
 
 #. Translators: Weekly archive title. %s is the week date format.
-#: inc/breadcrumb-trail.php:188
+#: inc/breadcrumb-trail.php:256
 msgid "Week %s"
 msgstr "Viikko %s"
 
@@ -554,7 +554,7 @@ msgstr ""
 
 #. Theme Name of the plugin/theme
 msgid "Toivo"
-msgstr ""
+msgstr "Toivo"
 
 #. Theme URI of the plugin/theme
 msgid "https://foxland.fi/downloads/toivo/"
@@ -674,45 +674,45 @@ msgctxt "dash before menu item description"
 msgid "&ndash;"
 msgstr "&ndash;"
 
-#: inc/breadcrumb-trail.php:128
-msgctxt "Breadcrumbs aria label"
+#: inc/breadcrumb-trail.php:245
+msgctxt "breadcrumbs aria label"
 msgid "Breadcrumbs"
 msgstr "Murupolku"
 
-#: inc/breadcrumb-trail.php:723
+#: inc/breadcrumb-trail.php:708
 msgctxt "minute and hour archives time format"
 msgid "g:i a"
 msgstr "g:i"
 
-#: inc/breadcrumb-trail.php:740
+#: inc/breadcrumb-trail.php:725
 msgctxt "minute archives time format"
 msgid "i"
 msgstr "i"
 
-#: inc/breadcrumb-trail.php:757
+#: inc/breadcrumb-trail.php:742
 msgctxt "hour archives time format"
 msgid "g a"
 msgstr "g a"
 
-#: inc/breadcrumb-trail.php:773 inc/breadcrumb-trail.php:802
-#: inc/breadcrumb-trail.php:829 inc/breadcrumb-trail.php:856
-#: inc/breadcrumb-trail.php:1043
+#: inc/breadcrumb-trail.php:758 inc/breadcrumb-trail.php:787
+#: inc/breadcrumb-trail.php:814 inc/breadcrumb-trail.php:841
+#: inc/breadcrumb-trail.php:1176
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr "Y"
 
-#: inc/breadcrumb-trail.php:774 inc/breadcrumb-trail.php:830
-#: inc/breadcrumb-trail.php:1047
+#: inc/breadcrumb-trail.php:759 inc/breadcrumb-trail.php:815
+#: inc/breadcrumb-trail.php:1180
 msgctxt "monthly archives date format"
 msgid "F"
 msgstr "F"
 
-#: inc/breadcrumb-trail.php:775 inc/breadcrumb-trail.php:1051
+#: inc/breadcrumb-trail.php:760 inc/breadcrumb-trail.php:1184
 msgctxt "daily archives date format"
 msgid "j"
 msgstr "j"
 
-#: inc/breadcrumb-trail.php:803
+#: inc/breadcrumb-trail.php:788
 msgctxt "weekly archives date format"
 msgid "W"
 msgstr "W"
@@ -757,3 +757,7 @@ msgstr "Sivupalkki"
 msgctxt "Sidebar aria label"
 msgid "Subsidiary Sidebar"
 msgstr "Alapalkin sivupalkki"
+
+#~ msgctxt "Breadcrumbs aria label"
+#~ msgid "Breadcrumbs"
+#~ msgstr "Murupolku"
