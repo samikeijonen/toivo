@@ -66,7 +66,12 @@
 					
 					// Get next element meaning UL with .sub-menu and add .toggled class
 					var nextElement = this.nextElementSibling;
+					
+					// Add 'toggled' class to sub-menu element
 					addClass( nextElement, 'toggled' );
+					
+					// Add 'dropdown-active' class to nav when dropdown is toggled
+					addClass( container, 'dropdown-active' );
 					
 				} else {
 					
@@ -76,9 +81,14 @@
 					// Set aria-expanded to false
 					this.setAttribute( 'aria-expanded', 'false' );
 					
-					// Get next element meaning UL with .sub-menu and add .toggled class
+					// Get next element meaning UL with .sub-menu
 					var nextElement = this.nextElementSibling;
+					
+					// Remove 'toggled' class from sub-menu element
 					removeClass( nextElement, 'toggled' );
+					
+					// Remove 'dropdown-active' class to nav when dropdown is toggled
+					removeClass( container, 'dropdown-active' );
 					
 				}
 			}, false );
@@ -176,12 +186,12 @@
 	* @param  {element} element
 	* @param  {string}  class
 	*/
-	removeClass = function (el, cls) {
+	removeClass = function ( el, cls ) {
 		var reg = new RegExp("(\\s|^)" + cls + "(\\s|$)");
 		el.className = el.className.replace(reg, " ").replace(/(^\s*)|(\s*$)/g,"");
 	}
 	
-	hasClass = function (elem, className) {
+	hasClass = function ( elem, className ) {
 		return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
 	}
 	
