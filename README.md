@@ -31,6 +31,11 @@ All other resources and theme elements are licensed under the [GNU GPL](http://w
 
 ## Changelog
 
+### Version 1.0.8 - July 30, 2015
+
+* Tweak: A little smoother navigation toggle.
+* Tweak: Update Breadcrumb Trail to version 1.0.1.
+
 ### Version 1.0.7.1 - July 7, 2015
 
 * Fix: Small css bug on social menu.
