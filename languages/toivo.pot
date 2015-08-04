@@ -4,25 +4,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Toivo 1.0.7.1\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
-"POT-Creation-Date: 2015-07-09 07:46:26+00:00\n"
+"POT-Creation-Date: 2015-07-29 16:55:28+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Foxland (https://foxland.fi)\n"
-"Language-Team: Foxland <sami.keijonen@foxnet.fi>\n"
-"X-Generator: grunt-wp-i18n 0.5.2\n"
-"X-Poedit-KeywordsList: "
-"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
-"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.5.0\n"
 "Language: en_US\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-Country: United States\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-Basepath: ../\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-Bookmarks: \n"
-"X-Textdomain-Support: yes\n"
 
 #: 404.php:15
 msgid "Oops! That page can&rsquo;t be found."
@@ -172,39 +162,39 @@ msgstr ""
 msgid "Breadcrumbs"
 msgstr ""
 
-#: inc/breadcrumb-trail.php:177
+#: inc/breadcrumb-trail.php:244
 msgid "Browse:"
 msgstr ""
 
-#: inc/breadcrumb-trail.php:178
+#: inc/breadcrumb-trail.php:246
 msgid "Home"
 msgstr ""
 
-#: inc/breadcrumb-trail.php:179
+#: inc/breadcrumb-trail.php:247
 msgid "404 Not Found"
 msgstr ""
 
-#: inc/breadcrumb-trail.php:180
+#: inc/breadcrumb-trail.php:248
 msgid "Archives"
 msgstr ""
 
-#: inc/breadcrumb-trail.php:182 loop-meta.php:17
+#: inc/breadcrumb-trail.php:250 loop-meta.php:17
 #. Translators: %s is the search query. The HTML entities are opening and
 #. closing curly quotes.
 msgid "Search results for &#8220;%s&#8221;"
 msgstr ""
 
-#: inc/breadcrumb-trail.php:184
+#: inc/breadcrumb-trail.php:252
 #. Translators: %s is the page number.
 msgid "Page %s"
 msgstr ""
 
-#: inc/breadcrumb-trail.php:186
+#: inc/breadcrumb-trail.php:254
 #. Translators: Minute archive title. %s is the minute time format.
 msgid "Minute %s"
 msgstr ""
 
-#: inc/breadcrumb-trail.php:188
+#: inc/breadcrumb-trail.php:256
 #. Translators: Weekly archive title. %s is the week date format.
 msgid "Week %s"
 msgstr ""
@@ -553,6 +543,14 @@ msgid ""
 "microdata."
 msgstr ""
 
+#. Author of the plugin/theme
+msgid "Sami Keijonen"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://foxland.fi"
+msgstr ""
+
 #. Template Name of the plugin/theme
 msgid "Front Page"
 msgstr ""
@@ -624,16 +622,17 @@ msgid "Front Page"
 msgstr ""
 
 #: functions.php:170
-#. Translators: If there are characters in your language that are not supported
-#. by Lato, translate this to 'off'. Do not translate into your own language.
+#. Translators: If there are characters in your language that are not
+#. * supported by Lato, translate this to 'off'. Do not translate
+#. * into your own language.
 msgctxt "Lato font: on or off"
 msgid "on"
 msgstr ""
 
 #: functions.php:176
-#. Translators: If there are characters in your language that are not supported
-#. by Raleway, translate this to 'off'. Do not translate into your own
-#. language.
+#. Translators: If there are characters in your language that are not
+#. * supported by Raleway, translate this to 'off'. Do not translate
+#. * into your own language.
 msgctxt "Raleway font: on or off"
 msgid "on"
 msgstr ""
@@ -643,45 +642,45 @@ msgctxt "dash before menu item description"
 msgid "&ndash;"
 msgstr ""
 
-#: inc/breadcrumb-trail.php:128
-msgctxt "Breadcrumbs aria label"
+#: inc/breadcrumb-trail.php:245
+msgctxt "breadcrumbs aria label"
 msgid "Breadcrumbs"
 msgstr ""
 
-#: inc/breadcrumb-trail.php:723
+#: inc/breadcrumb-trail.php:708
 msgctxt "minute and hour archives time format"
 msgid "g:i a"
 msgstr ""
 
-#: inc/breadcrumb-trail.php:740
+#: inc/breadcrumb-trail.php:725
 msgctxt "minute archives time format"
 msgid "i"
 msgstr ""
 
-#: inc/breadcrumb-trail.php:757
+#: inc/breadcrumb-trail.php:742
 msgctxt "hour archives time format"
 msgid "g a"
 msgstr ""
 
-#: inc/breadcrumb-trail.php:773 inc/breadcrumb-trail.php:802
-#: inc/breadcrumb-trail.php:829 inc/breadcrumb-trail.php:856
-#: inc/breadcrumb-trail.php:1043
+#: inc/breadcrumb-trail.php:758 inc/breadcrumb-trail.php:787
+#: inc/breadcrumb-trail.php:814 inc/breadcrumb-trail.php:841
+#: inc/breadcrumb-trail.php:1176
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr ""
 
-#: inc/breadcrumb-trail.php:774 inc/breadcrumb-trail.php:830
-#: inc/breadcrumb-trail.php:1047
+#: inc/breadcrumb-trail.php:759 inc/breadcrumb-trail.php:815
+#: inc/breadcrumb-trail.php:1180
 msgctxt "monthly archives date format"
 msgid "F"
 msgstr ""
 
-#: inc/breadcrumb-trail.php:775 inc/breadcrumb-trail.php:1051
+#: inc/breadcrumb-trail.php:760 inc/breadcrumb-trail.php:1184
 msgctxt "daily archives date format"
 msgid "j"
 msgstr ""
 
-#: inc/breadcrumb-trail.php:803
+#: inc/breadcrumb-trail.php:788
 msgctxt "weekly archives date format"
 msgid "W"
 msgstr ""
