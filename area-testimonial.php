@@ -22,7 +22,7 @@
 				
 						<?php
 							$jetpack_options = get_theme_mod( 'jetpack_testimonials' );
-							$toivo_testimonial_heading = $jetpack_options['page-title'] ? esc_html( $jetpack_options['page-title'] ) : esc_html__( 'Testimonials', 'toivo' );
+							$toivo_testimonial_heading = isset( $jetpack_options['page-title'] ) && '' != $jetpack_options['page-title'] ? esc_html( $jetpack_options['page-title'] ) : esc_html__( 'Testimonials', 'toivo' );
 							echo '<h2 class="entry-title" ' . hybrid_get_attr( 'entry-title' ) . '>' . $toivo_testimonial_heading . '</h2>';
 						?>
 					
