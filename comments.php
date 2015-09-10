@@ -21,8 +21,6 @@ if ( post_password_required() ) {
 <div id="comments" class="comments-area">
 
 	<div class="comments-content entry-content">
-
-	<?php // You can start editing here -- including this comment! ?>
 	
 	<?php if ( 0 == get_comments_number() ) : ?>
 		<h2 class="comments-title-no">
