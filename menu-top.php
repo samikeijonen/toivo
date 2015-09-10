@@ -16,7 +16,7 @@
 				'theme_location' => 'top',
 				'menu_id'        => 'menu-top-items',
 				'depth'          => 1,
-				'menu_class'     => 'menu-items',
+				'menu_class'     => 'menu-items menu-top-items',
 				'fallback_cb'    => ''
 			)
 		); ?>
