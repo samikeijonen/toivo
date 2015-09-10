@@ -71,8 +71,7 @@ grunt.initConfig({
 	uglify: {
 		responsivenav: {
 			files: {
-				'js/responsive-nav.min.js': ['js/responsive-nav.js'],
-				'js/settings.min.js': ['js/settings.js']
+				'js/responsive-nav.min.js': ['js/responsive-nav.js']
 			}
 		},
 		settigns: {
