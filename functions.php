@@ -8,7 +8,7 @@
 /**
  * The current version of the theme.
  */
-define( 'TOIVO_VERSION', '1.0.8' );
+define( 'TOIVO_VERSION', '1.1.0' );
 
 /**
  * The suffix to use for scripts.
@@ -215,17 +215,17 @@ function toivo_scripts() {
 	
 	/* Enqueue responsive navigation if one of the menus is in use. */
 	if ( has_nav_menu( 'primary' ) || has_nav_menu( 'top' ) || has_nav_menu( 'social' ) ) {
+		
 		wp_enqueue_script( 'toivo-navigation', get_template_directory_uri() . '/js/responsive-nav' . TOIVO_SUFFIX . '.js', array(), TOIVO_VERSION, true );
 	
-		/* Enqueue responsive navigation settings. */
-		wp_enqueue_script( 'toivo-settings', trailingslashit( get_template_directory_uri() ) . 'js/settings' . TOIVO_SUFFIX . '.js', array( 'toivo-navigation' ), TOIVO_VERSION, true );
 	}
 	
 	/* Enqueue functions. */
-	wp_enqueue_script( 'toivo-script', get_template_directory_uri() . '/js/functions' . TOIVO_SUFFIX . '.js', array(), TOIVO_VERSION, true );
-	wp_localize_script( 'toivo-script', 'screenReaderText', array(
+	wp_enqueue_script( 'toivo-script', get_template_directory_uri() . '/js/functions' . TOIVO_SUFFIX . '.js', array( 'toivo-navigation' ), TOIVO_VERSION, true );
+	wp_localize_script( 'toivo-script', 'navSettings', array(
 		'expand'   => '<span class="screen-reader-text">' . __( 'Expand child menu', 'toivo' ) . '</span>',
 		'collapse' => '<span class="screen-reader-text">' . __( 'Collapse child menu', 'toivo' ) . '</span>',
+		'dropdown' => get_theme_mod( 'disable_dropdown' ) ? false : true,
 	) );
 	
 	/* Enqueue comment reply. */
