@@ -62,6 +62,38 @@ function toivo_customize_register( $wp_customize ) {
 		)
 	);
 	
+	/* == Navigation section == */
+	
+	/* Add the navigation section. */
+	$wp_customize->add_section(
+		'toivo-navigation',
+		array(
+			'title'    => esc_html__( 'Navigation settings', 'toivo' ),
+			'priority' => 15,
+			'panel'    => 'theme'
+		)
+	);
+	
+	$wp_customize->add_setting(
+		'disable_dropdown',
+		array(
+			'default'           => '',
+			'sanitize_callback' => 'toivo_sanitize_checkbox'
+		)
+	);
+	
+	/* Add hide testimonial control. */
+	$wp_customize->add_control(
+		'disable_dropdown',
+		array(
+			'label'       => esc_html__( 'Disable multi-level menu', 'toivo' ),
+			'description' => esc_html__( 'Check this if you want to disable multi-level dropdown in Primary menu.', 'toivo' ),
+			'section'     => 'toivo-navigation',
+			'priority'    => 15,
+			'type'        => 'checkbox'
+		)
+	);
+	
 	/* == Front page section == */
 	
 	/* Add the front-page section. */
