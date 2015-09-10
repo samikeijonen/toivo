@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Toivo 1.0.0\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
-"POT-Creation-Date: 2015-07-29 19:57+0300\n"
-"PO-Revision-Date: 2015-07-29 19:58+0300\n"
+"POT-Creation-Date: 2015-09-10 09:26+0300\n"
+"PO-Revision-Date: 2015-09-10 09:28+0300\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -59,11 +59,11 @@ msgstr "Suositukset"
 msgid "Your comment is awaiting moderation."
 msgstr "Kommenttisi odottaa hyväksyntää."
 
-#: comments.php:29
+#: comments.php:27
 msgid "Leave a comment"
 msgstr "Jätä kommentti"
 
-#: comments.php:63
+#: comments.php:61
 msgid "Comments are closed."
 msgstr "Kommentointi on suljettu."
 
@@ -149,11 +149,11 @@ msgstr "Sivupalkki sijaitsee alapalkissa."
 msgid "A sidebar located in the Front Page Template."
 msgstr "Tähän liitetyt vimpaimet näkyvät Etusivu-sivupohjassa."
 
-#: functions.php:227
+#: functions.php:226
 msgid "Expand child menu"
 msgstr "Avaa alavalikko"
 
-#: functions.php:228
+#: functions.php:227
 msgid "Collapse child menu"
 msgstr "Sulje alavalikko"
 
@@ -235,46 +235,60 @@ msgid "Global Layout"
 msgstr "Globaali ulkoasu"
 
 #: inc/customizer.php:71
+msgid "Navigation settings"
+msgstr "Navigaation asetukset"
+
+#: inc/customizer.php:89
+msgid "Disable multi-level menu"
+msgstr "Ota dropdown-valikko pois käytöstä"
+
+#: inc/customizer.php:90
+msgid "Check this if you want to disable multi-level dropdown in Primary menu."
+msgstr ""
+"Valitse tämä, jos haluat ottaa dropdown-valikon pois käytöstä pienillä "
+"näytöillä."
+
+#: inc/customizer.php:103
 msgid "Front Page Settings"
 msgstr "Etusivun asetukset"
 
-#: inc/customizer.php:72
+#: inc/customizer.php:104
 msgid ""
 "The first Callout is for top callout section and the second one is for "
 "bottom Callout section."
 msgstr ""
 "Ensimmäinen Callout-osio on ylempää Callout-osiota varten ja toinen alempaa."
 
-#: inc/customizer.php:112
+#: inc/customizer.php:144
 msgid "%s Callout title"
 msgstr "Callout-otsikko %s"
 
-#: inc/customizer.php:132
+#: inc/customizer.php:164
 msgid "%s Callout text"
 msgstr "Etusivun \"Callout\" teksti %s"
 
-#: inc/customizer.php:152
+#: inc/customizer.php:184
 msgid "%s Callout URL"
 msgstr "Etusivun \"Callout\" URL %s"
 
-#: inc/customizer.php:172
+#: inc/customizer.php:204
 msgid "%s Callout URL text"
 msgstr "Etusivun \"Callout\" URL:n teksti %s"
 
-#: inc/customizer.php:198
+#: inc/customizer.php:230
 msgid "Hide testimonials"
 msgstr "Piilota suositukset"
 
-#: inc/customizer.php:199
+#: inc/customizer.php:231
 msgid ""
 "Check this if you want to hide testimonials from the Front Page Template."
 msgstr "Valitse tämä, jos haluta piilottaa suositukset Etusivu-sivupohjassa."
 
-#: inc/customizer.php:218
+#: inc/customizer.php:250
 msgid "Testimonials after featured area"
 msgstr "Suositukset \"Featured\"-alueen jälkeen"
 
-#: inc/customizer.php:219
+#: inc/customizer.php:251
 msgid ""
 "Check this if you want to move testimonials after Featured area in the Front "
 "Page Template."
@@ -285,19 +299,19 @@ msgstr ""
 msgid "Child Pages"
 msgstr "Alasivut"
 
-#: inc/customizer.php:239
+#: inc/customizer.php:271
 msgid "Blog Posts"
 msgstr "Blogikirjoitukset"
 
-#: inc/customizer.php:240
+#: inc/customizer.php:272
 msgid "Portfolios"
 msgstr "Portfoliot"
 
-#: inc/customizer.php:247
+#: inc/customizer.php:279
 msgid "Featured Content"
 msgstr "Etusivun \"featured\"-sisältö"
 
-#: inc/customizer.php:248
+#: inc/customizer.php:280
 msgid ""
 "Select do you want to feature Child Pages, Blog Posts or Portfolios in Front "
 "Page."
@@ -305,11 +319,11 @@ msgstr ""
 "Valitse haluatko näyttää etusivulla alasivut, blogikirjoitukset vai "
 "portfoliot."
 
-#: inc/customizer.php:270
+#: inc/customizer.php:302
 msgid "Callout Image"
 msgstr "Callout-kuva"
 
-#: inc/customizer.php:271
+#: inc/customizer.php:303
 msgid ""
 "Add Callout Image which can be map or product image for example. Recommended "
 "width is 1920px."
@@ -317,75 +331,75 @@ msgstr ""
 "Lisää Callout-kuva, joka voi esimerkiksi olla karttakuva tai tuotekuva. "
 "Suositeltu kuvan leveys on 1920px."
 
-#: inc/customizer.php:291
+#: inc/customizer.php:323
 msgid "Callout image alt text"
 msgstr "Callout-kuvan alt-teksti"
 
-#: inc/customizer.php:311
+#: inc/customizer.php:343
 msgid "Callout image URL"
 msgstr "Callout-kuvan URL"
 
-#: inc/customizer.php:324
+#: inc/customizer.php:356
 msgid "Background Settings"
 msgstr "Taustakuvan asetukset"
 
-#: inc/customizer.php:343
+#: inc/customizer.php:375
 msgid "Header Background Color"
 msgstr "Yläpalkin taustaväri"
 
-#: inc/customizer.php:364
+#: inc/customizer.php:396
 msgid "Header Color Opacity."
 msgstr "Otsakkeen värin läpinäkyvyys."
 
-#: inc/customizer.php:365
+#: inc/customizer.php:397
 msgid "Set Header Color opacity."
 msgstr "Aseta otsakkeen värin läpinäkyvyys."
 
-#: inc/customizer.php:390
+#: inc/customizer.php:422
 msgid "Subsidiary sidebar background"
 msgstr "Alapalkin taustakuva"
 
-#: inc/customizer.php:410
+#: inc/customizer.php:442
 msgid "Subsidiary Sidebar Background Color"
 msgstr "Alapalkin taustaväri"
 
-#: inc/customizer.php:431
+#: inc/customizer.php:463
 msgid "Subsidiary Sidebar Background Color Opacity."
 msgstr "Alapalkin taustavärin läpinäkyvyys"
 
-#: inc/customizer.php:432
+#: inc/customizer.php:464
 msgid "Set Subsidiary Sidebar Background Color Opacity."
 msgstr "Aseta alapalkin taustavärin läpinäkyvyys."
 
-#: inc/customizer.php:452
+#: inc/customizer.php:484
 msgid "Portfolio Settings"
 msgstr "Portfolio asetukset"
 
-#: inc/customizer.php:471
+#: inc/customizer.php:503
 msgid "Portfolio Page Title"
 msgstr "Portfolio-sivun otsikko"
 
-#: inc/customizer.php:491
+#: inc/customizer.php:523
 msgid "Portfolio Page Description"
 msgstr "Portfolio-sivun kuvaus"
 
-#: inc/customizer.php:506
+#: inc/customizer.php:538
 msgid "Footer Settings"
 msgstr "Alapalkin asetukset"
 
-#: inc/customizer.php:525
+#: inc/customizer.php:557
 msgid "Hide Footer"
 msgstr "Piilota sivun alareunassa oleva teksti"
 
-#: inc/customizer.php:526
+#: inc/customizer.php:558
 msgid "Check this if you want to hide Footer content."
 msgstr "Valitse tämä, jos haluta piilottaa sivun alareunassa olevan tekstin."
 
-#: inc/customizer.php:546
+#: inc/customizer.php:578
 msgid "Footer text"
 msgstr "Alapalkin teksti"
 
-#: inc/customizer.php:547
+#: inc/customizer.php:579
 msgid "Enter Footer text which replaces default text."
 msgstr "Kirjoita sivun alareunassa oleva teksti, mikä korvaa oletustekstin."
 
@@ -596,7 +610,7 @@ msgctxt "%1%s is for comment date"
 msgid "%1$s"
 msgstr "%1$s"
 
-#: comments.php:37
+#: comments.php:35
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
@@ -717,12 +731,12 @@ msgctxt "weekly archives date format"
 msgid "W"
 msgstr "W"
 
-#: inc/customizer.php:95
+#: inc/customizer.php:127
 msgctxt "position of callout text"
 msgid "Top"
 msgstr "ylhäällä"
 
-#: inc/customizer.php:97
+#: inc/customizer.php:129
 msgctxt "position of callout text"
 msgid "Bottom"
 msgstr "alhaalla"
