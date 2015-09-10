@@ -4,7 +4,7 @@ Theme URI: https://foxland.fi/downloads/toivo/
 Author: Sami Keijonen
 Author URI: https://foxland.fi
 Description: Toivo is perfect fit for business, personal or blog sites. It has beautiful Front Page template where you can show your important content, testimonials and Callout links. Toivo is an accessible, translation-ready theme which supports plenty of features like Right to Left languages and Schema.org microdata.
-Version: 1.0.8
+Version: 1.1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: toivo
@@ -1022,7 +1022,7 @@ button#nav-toggle {
 	}
 	
 	.js .main-navigation,
-	.js .toivo-theme .main-navigation .sub-menu {
+	.js .toivo-theme .main-navigation.multiple-level-nav .sub-menu {
 		clip: rect(0 0 0 0);
 		max-height: 0;
 		position: absolute;
@@ -1032,7 +1032,7 @@ button#nav-toggle {
 	}
 
 	.js .toivo-theme .main-navigation,
-	.js .toivo-theme .main-navigation .sub-menu {
+	.js .toivo-theme .main-navigation.multiple-level-nav .sub-menu {
 		-webkit-transition: 5s;  
 		-moz-transition: 5s;
 		-ms-transition: 5s;
@@ -1041,13 +1041,13 @@ button#nav-toggle {
 	}
 
 	.main-navigation.opened,
-	.toivo-theme .main-navigation .sub-menu.toggled {
+	.toivo-theme .main-navigation.multiple-level-nav .sub-menu.toggled {
 		max-height: 9999px;
 		position: relative;
 	}
 	
 	html.js .toivo-theme .main-navigation.opened,
-	.toivo-theme .main-navigation .sub-menu.toggled {
+	.toivo-theme .main-navigation.multiple-level-nav .sub-menu.toggled {
 		max-height: 9999px;
 	}
 	
@@ -1525,7 +1525,7 @@ button#nav-toggle {
 
 #menu-social li a[href*="codepen.io"]::before,
 #menu-social li a[href*="digg.com"]::before,
-#menu-social li a[href*="dri9f9f9fle.com"]::before,
+#menu-social li a[href*="dribbble.com"]::before,
 #menu-social li a[href*="facebook.com"]::before,
 #menu-social li a[href*="flickr.com"]::before,
 #menu-social li a[href*="plus.google.com"]::before,
@@ -3756,6 +3756,9 @@ body .search-submit {
 .comment-navigation-top,
 .pagination {
 	border-bottom: 1px solid #ddd;
+}
+#menu-primary.opened {
+	border-bottom: none;
 }
 
 .sidebar ul ul li:first-child,

@@ -3,11 +3,16 @@
  * Enable tab support for dropdown menus.
  */
 ( function() {
-	var container, containerTop, menu, menuTop, links, linksTop, dropdownButton;
-
+	var container, containerTop, ContainerSocial, menuTop;
+	
+	// Primary menu
 	container = document.getElementById( 'menu-primary' );
 	
+	// Top menu
 	containerTop = document.getElementById( 'menu-top' );
+	
+	// Social menu
+	containerSocial = document.getElementById( 'menu-social' );
 
 	/**
 	 * Make dropdown menus keyboard accessible.
@@ -15,123 +20,79 @@
 	 
 	if ( container ) {
 		
-		menu = container.getElementsByTagName( 'ul' )[0];
-
-		// Get all the link elements within the menu.
-		links    = menu.getElementsByTagName( 'a' );
-		subMenus = menu.getElementsByTagName( 'ul' );
-
-		// Each time a menu link is focused or blurred call the function toggleFocus.
-		for ( var i = 0, len = links.length; i < len; i++ ) {
-			links[i].onfocus = toggleFocus;
-			links[i].onblur = toggleFocus;
-		}
-		
-		// Set menu items with submenus to aria-haspopup="true".
-		for ( var i = 0, len = subMenus.length; i < len; i++ ) {
-			subMenus[i].parentNode.setAttribute( 'aria-haspopup', 'true' );
-		}
-		
-		// Add button after link when there is submenu around.
-		var parentLink = container.querySelectorAll( '.menu-item-has-children > a, .page_item_has_children > a' );
-		
-		for ( var i = 0; i < parentLink.length; ++i ) {
-			parentLink[i].insertAdjacentHTML( 'afterend', '<button class="dropdown-toggle" aria-expanded="false">' + screenReaderText.expand + '</button>' );
-		}
-		
-		// Select all dropdown buttons
-		dropdownButton = container.querySelectorAll( '.dropdown-toggle' );
-			
-		// For each dropdown Button element add click event
-		[].forEach.call( dropdownButton, function( el ) {
-
-			// Add click event listener
-			el.addEventListener( "click", function( event ) {
-				
-				// Change dropdown button text on every click
-				if( this.innerHTML === screenReaderText.expand ) {
-					this.innerHTML = screenReaderText.collapse;
-				} else {
-					this.innerHTML = screenReaderText.expand;
-				}
-				
-				// Toggle dropdown button
-				if( !hasClass( this, 'toggled' ) ) {
-					
-					// Add .toggled class
-					addClass( this, 'toggled' );
-					
-					// Set aria-expanded to true
-					this.setAttribute( 'aria-expanded', 'true' );
-					
-					// Get next element meaning UL with .sub-menu and add .toggled class
-					var nextElement = this.nextElementSibling;
-					
-					// Add 'toggled' class to sub-menu element
-					addClass( nextElement, 'toggled' );
-					
-					// Add 'dropdown-active' class to nav when dropdown is toggled
-					addClass( container, 'dropdown-active' );
-					
-				} else {
-					
-					// Remove .toggled class
-					removeClass( this, 'toggled' );
-					
-					// Set aria-expanded to false
-					this.setAttribute( 'aria-expanded', 'false' );
-					
-					// Get next element meaning UL with .sub-menu
-					var nextElement = this.nextElementSibling;
-					
-					// Remove 'toggled' class from sub-menu element
-					removeClass( nextElement, 'toggled' );
-					
-					// Remove 'dropdown-active' class to nav when dropdown is toggled
-					removeClass( container, 'dropdown-active' );
-					
-				}
-			}, false );
-
+		var buttonMain = document.getElementById( 'nav-toggle' );
+		var navMain = responsiveNav(".main-navigation", {     // Selector
+			transition: 350,                                  // Integer: Speed of the transition, in milliseconds
+			customToggle: "#nav-toggle",                      // Selector: Specify the ID of a custom toggle
+			enableFocus: true,                                // Boolean: Do we use use 'focus' class in our nav
+			enableDropdown: navSettings.dropdown,             // Boolean: Do we use multi level dropdown
+			dropDown: "menu-item-has-children",               // String: Class that is added to link element that have sub menu
+			openDropdown: navSettings.expand,                 // String: Label for opening sub menu
+			closeDropdown: navSettings.collapse,              // String: Label for closing sub menu
+			init: function () {                               // Set ARIA for menu toggle button
+				buttonMain.setAttribute( 'aria-expanded', 'false' );
+				buttonMain.setAttribute( 'aria-pressed', 'false' );
+				buttonMain.setAttribute( 'aria-controls', 'menu-primary' );
+			},
+			open: function () {
+				buttonMain.setAttribute( 'aria-expanded', 'true' );
+				buttonMain.setAttribute( 'aria-pressed', 'true' );
+			},
+			close: function () {
+				buttonMain.setAttribute( 'aria-expanded', 'false' );
+				buttonMain.setAttribute( 'aria-pressed', 'false' );
+			},
 		});
 		
 	}
 	
 	if ( containerTop ) {
-		
-		menuTop = containerTop.getElementsByTagName( 'ul' )[0];
 
-		// Get all the link elements within the menu.
-		linksTop = menuTop.getElementsByTagName( 'a' );
-
-		// Each time a menu link is focused or blurred call the function toggleFocus.
-		for ( var i = 0, len = linksTop.length; i < len; i++ ) {
-			linksTop[i].onfocus = toggleFocus;
-			linksTop[i].onblur = toggleFocus;
-		}
+		var buttonTop = document.getElementById( 'top-nav-toggle' );
+		var navTop = responsiveNav(".top-navigation", { // Selector
+			transition: 350,                 // Integer: Speed of the transition, in milliseconds
+			customToggle: "#top-nav-toggle", // Selector: Specify the ID of a custom toggle
+			enableFocus: true,               // Boolean: Do we use use 'focus' class in our nav
+			init: function () {              // Set ARIA for menu toggle button
+				buttonTop.setAttribute( 'aria-expanded', 'false' );
+				buttonTop.setAttribute( 'aria-pressed', 'false' );
+				buttonTop.setAttribute( 'aria-controls', 'menu-top' );
+			},
+			open: function () {
+				buttonTop.setAttribute( 'aria-expanded', 'true' );
+				buttonTop.setAttribute( 'aria-pressed', 'true' );
+				navSocial.close();
+			},
+			close: function () {
+				buttonTop.setAttribute( 'aria-expanded', 'false' );
+				buttonTop.setAttribute( 'aria-pressed', 'false' );
+			},
+		});
 		
 	}
+	
+	if ( containerSocial ) {
 
-	function toggleFocus() {
-		var current = this,
-		    ancestors = [];
-
-		// Create an array of <li> ancestors of the current link. Stop upon
-		// reaching .menu-items at the top of the current menu system.
-		while ( -1 === current.className.indexOf( 'menu-items' ) ) {
-			if ( 'li' === current.tagName.toLowerCase() ) {
-				ancestors.unshift( current );
-			}
-			current = current.parentElement;
-		}
-
-		// For each element in ancestors[] toggle the class .focus.
-		for ( i = 0, len = ancestors.length; i < len; i++ ) {
-			if ( -1 !== ancestors[i].className.indexOf( 'focus' ) )
-				ancestors[i].className = ancestors[i].className.replace( ' focus', '' );
-			else
-				ancestors[i].className += ' focus';
-		}
+		var buttonSocial = document.getElementById( 'social-nav-toggle' );
+		var navSocial = responsiveNav(".social-navigation", { // Selector
+			transition: 350,                    // Integer: Speed of the transition, in milliseconds
+			customToggle: "#social-nav-toggle", // Selector: Specify the ID of a custom toggle
+			init: function () {                 // Set ARIA for menu toggle button
+				buttonSocial.setAttribute( 'aria-expanded', 'false' );
+				buttonSocial.setAttribute( 'aria-pressed', 'false' );
+				buttonSocial.setAttribute( 'aria-controls', 'menu-social' );
+			},
+			open: function () {
+				buttonSocial.setAttribute( 'aria-expanded', 'true' );
+				buttonSocial.setAttribute( 'aria-pressed', 'true' );
+				navTop.close();
+			},
+			close: function () {
+				buttonSocial.setAttribute( 'aria-expanded', 'false' );
+				buttonSocial.setAttribute( 'aria-pressed', 'false' );
+			},
+		});	
+		
 	}
 	
 	// Fix child menus for touch devices.
@@ -166,47 +127,6 @@
 	if ( container ) {
 		fixMenuTouchTaps( container );
 	}
-	
-	/**
-	* Adds a class to any element
-	*
-	* @param {element} element
-	* @param {string}  class
-	*/
-	addClass = function (el, cls) {
-		if (el.className.indexOf(cls) !== 0) {
-			el.className += " " + cls;
-			el.className = el.className.replace(/(^\s*)|(\s*$)/g,"");
-		}
-	}
-    
-	/**
-	* Remove a class from any element
-	*
-	* @param  {element} element
-	* @param  {string}  class
-	*/
-	removeClass = function ( el, cls ) {
-		var reg = new RegExp("(\\s|^)" + cls + "(\\s|$)");
-		el.className = el.className.replace(reg, " ").replace(/(^\s*)|(\s*$)/g,"");
-	}
-	
-	hasClass = function ( elem, className ) {
-		return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
-	}
-	
-	/**
-	* forEach method that passes back the stuff we need
-	*
-	* @param  {array}    array
-	* @param  {Function} callback
-	* @param  {scope}    scope
-	*/
-	forEach = function (array, callback, scope) {
-		for (var i = 0; i < array.length; i++) {
-			callback.call(scope, i, array[i]);
-		}
-	};
 	
 } )();
 
