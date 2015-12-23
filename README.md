@@ -31,6 +31,10 @@ All other resources and theme elements are licensed under the [GNU GPL](http://w
 
 ## Changelog
 
+### Version 1.1.1 - December 23, 2015
+
+* Update multi-level dropdown menu script.
+
 ### Version 1.1.0 - September 10, 2015
 
 * Feature: Added setting for disabling multi-level dropdown menu for narrow screens.
