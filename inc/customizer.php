@@ -82,7 +82,7 @@ function toivo_customize_register( $wp_customize ) {
 		)
 	);
 	
-	/* Add hide testimonial control. */
+	/* Add hide multi-level menu control. */
 	$wp_customize->add_control(
 		'disable_dropdown',
 		array(
