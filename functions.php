@@ -8,7 +8,7 @@
 /**
  * The current version of the theme.
  */
-define( 'TOIVO_VERSION', '1.1.1' );
+define( 'TOIVO_VERSION', '1.1.2' );
 
 /**
  * The suffix to use for scripts.
@@ -397,7 +397,7 @@ function toivo_get_editor_styles() {
  *
  * @author    Twenty Fifteen
  * @copyright Automattic
- * @license  http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  *
  * @since  1.0.0
  * @param  string $color The original color, in 3- or 6-digit hexadecimal form.

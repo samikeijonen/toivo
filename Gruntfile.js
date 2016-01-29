@@ -10,11 +10,11 @@ grunt.initConfig({
     makepot: {
       target: {
         options: {
-          domainPath: '/languages/',    // Where to save the POT file.
-          exclude: ['build/.*'],        // Exlude build folder.
-          potFilename: 'toivo.pot',     // Name of the POT file.
-          type: 'wp-theme',             // Type of project (wp-plugin or wp-theme).
-          updateTimestamp: true,        // Whether the POT-Creation-Date should be updated without other changes.
+          domainPath: '/languages/',                // Where to save the POT file.
+          exclude: ['build/.*', 'node_modules/.*'], // Exlude build folder.
+          potFilename: 'toivo.pot',                 // Name of the POT file.
+          type: 'wp-theme',                         // Type of project (wp-plugin or wp-theme).
+          updateTimestamp: false,                   // Whether the POT-Creation-Date should be updated without other changes.
           processPot: function( pot, options ) {
             pot.headers['report-msgid-bugs-to'] = 'https://foxland.fi/contact/';
 			pot.headers['language'] = 'en_US';
