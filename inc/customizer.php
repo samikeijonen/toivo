@@ -100,10 +100,11 @@ function toivo_customize_register( $wp_customize ) {
 	$wp_customize->add_section(
 		'front-page',
 		array(
-			'title'       => esc_html__( 'Front Page Settings', 'toivo' ),
-			'description' => esc_html__( 'The first Callout is for top callout section and the second one is for bottom Callout section.', 'toivo' ),
-			'priority'    => 20,
-			'panel'       => 'theme'
+			'title'           => esc_html__( 'Front Page Settings', 'toivo' ),
+			'description'     => esc_html__( 'The first Callout is for top callout section and the second one is for bottom Callout section.', 'toivo' ),
+			'priority'        => 20,
+			'panel'           => 'theme',
+			'active_callback' => 'toivo_is_front_page_template',
 		)
 	);
 	
@@ -703,6 +704,17 @@ function toivo_sanitize_checkbox( $input ) {
 		return '';
 	}
 
+}
+
+/**
+ * Check if we're on Front Page template.
+ *
+ * @since  1.1.2
+ *
+ * @return boolean.
+ */
+function toivo_is_front_page_template() {
+	return is_page_template( 'pages/front-page.php' );
 }
 
 /**
