@@ -738,7 +738,7 @@
       _transitions: function () {
         if (opts.animate) {
           var objStyle = nav.style,
-            transition = "max-height " + opts.transition + "ms";
+            transition = "max-height " + opts.transition + "ms, visibility " + opts.transition +  "ms linear";
 
           objStyle.WebkitTransition =
           objStyle.MozTransition =
@@ -806,7 +806,7 @@
 		  
         // Get submenus
         var menu = nav.getElementsByTagName( 'ul' )[0],
-        subMenus = menu.getElementsByTagName( 'ul' ),
+        subMenus = nav.getElementsByClassName( opts.subMenu ),
         i,
         len;
 		
