@@ -1,14 +1,14 @@
-# Copyright (C) 2015 Sami Keijonen
+# Copyright (C) 2016 Sami Keijonen
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
 "Project-Id-Version: Toivo 1.1.1\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
-"POT-Creation-Date: 2015-12-23 07:28:46+00:00\n"
+"POT-Creation-Date: 2016-01-29 07:44:29+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "X-Generator: grunt-wp-i18n 0.5.0\n"
@@ -245,35 +245,35 @@ msgid ""
 "bottom Callout section."
 msgstr ""
 
-#: inc/customizer.php:144
+#: inc/customizer.php:145
 msgid "%s Callout title"
 msgstr ""
 
-#: inc/customizer.php:164
+#: inc/customizer.php:165
 msgid "%s Callout text"
 msgstr ""
 
-#: inc/customizer.php:184
+#: inc/customizer.php:185
 msgid "%s Callout URL"
 msgstr ""
 
-#: inc/customizer.php:204
+#: inc/customizer.php:205
 msgid "%s Callout URL text"
 msgstr ""
 
-#: inc/customizer.php:230
+#: inc/customizer.php:231
 msgid "Hide testimonials"
 msgstr ""
 
-#: inc/customizer.php:231
+#: inc/customizer.php:232
 msgid "Check this if you want to hide testimonials from the Front Page Template."
 msgstr ""
 
-#: inc/customizer.php:250
+#: inc/customizer.php:251
 msgid "Testimonials after featured area"
 msgstr ""
 
-#: inc/customizer.php:251
+#: inc/customizer.php:252
 msgid ""
 "Check this if you want to move testimonials after Featured area in the "
 "Front Page Template."
@@ -283,103 +283,103 @@ msgstr ""
 msgid "Child Pages"
 msgstr ""
 
-#: inc/customizer.php:271
+#: inc/customizer.php:272
 msgid "Blog Posts"
 msgstr ""
 
-#: inc/customizer.php:272
+#: inc/customizer.php:273
 msgid "Portfolios"
 msgstr ""
 
-#: inc/customizer.php:279
+#: inc/customizer.php:280
 msgid "Featured Content"
 msgstr ""
 
-#: inc/customizer.php:280
+#: inc/customizer.php:281
 msgid ""
 "Select do you want to feature Child Pages, Blog Posts or Portfolios in "
 "Front Page."
 msgstr ""
 
-#: inc/customizer.php:302
+#: inc/customizer.php:303
 msgid "Callout Image"
 msgstr ""
 
-#: inc/customizer.php:303
+#: inc/customizer.php:304
 msgid ""
 "Add Callout Image which can be map or product image for example. "
 "Recommended width is 1920px."
 msgstr ""
 
-#: inc/customizer.php:323
+#: inc/customizer.php:324
 msgid "Callout image alt text"
 msgstr ""
 
-#: inc/customizer.php:343
+#: inc/customizer.php:344
 msgid "Callout image URL"
 msgstr ""
 
-#: inc/customizer.php:356
+#: inc/customizer.php:357
 msgid "Background Settings"
 msgstr ""
 
-#: inc/customizer.php:375
+#: inc/customizer.php:376
 msgid "Header Background Color"
 msgstr ""
 
-#: inc/customizer.php:396
+#: inc/customizer.php:397
 msgid "Header Color Opacity."
 msgstr ""
 
-#: inc/customizer.php:397
+#: inc/customizer.php:398
 msgid "Set Header Color opacity."
 msgstr ""
 
-#: inc/customizer.php:422
+#: inc/customizer.php:423
 msgid "Subsidiary sidebar background"
 msgstr ""
 
-#: inc/customizer.php:442
+#: inc/customizer.php:443
 msgid "Subsidiary Sidebar Background Color"
 msgstr ""
 
-#: inc/customizer.php:463
+#: inc/customizer.php:464
 msgid "Subsidiary Sidebar Background Color Opacity."
 msgstr ""
 
-#: inc/customizer.php:464
+#: inc/customizer.php:465
 msgid "Set Subsidiary Sidebar Background Color Opacity."
 msgstr ""
 
-#: inc/customizer.php:484
+#: inc/customizer.php:485
 msgid "Portfolio Settings"
 msgstr ""
 
-#: inc/customizer.php:503
+#: inc/customizer.php:504
 msgid "Portfolio Page Title"
 msgstr ""
 
-#: inc/customizer.php:523
+#: inc/customizer.php:524
 msgid "Portfolio Page Description"
 msgstr ""
 
-#: inc/customizer.php:538
+#: inc/customizer.php:539
 msgid "Footer Settings"
 msgstr ""
 
-#: inc/customizer.php:557
+#: inc/customizer.php:558
 msgid "Hide Footer"
 msgstr ""
 
-#: inc/customizer.php:558
+#: inc/customizer.php:559
 msgid "Check this if you want to hide Footer content."
 msgstr ""
 
-#: inc/customizer.php:578
+#: inc/customizer.php:579
 msgid "Footer text"
 msgstr ""
 
-#: inc/customizer.php:579
+#: inc/customizer.php:580
 msgid "Enter Footer text which replaces default text."
 msgstr ""
 
@@ -697,12 +697,12 @@ msgctxt "weekly archives date format"
 msgid "W"
 msgstr ""
 
-#: inc/customizer.php:127
+#: inc/customizer.php:128
 msgctxt "position of callout text"
 msgid "Top"
 msgstr ""
 
-#: inc/customizer.php:129
+#: inc/customizer.php:130
 msgctxt "position of callout text"
 msgid "Bottom"
 msgstr ""
