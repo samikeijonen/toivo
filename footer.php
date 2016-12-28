@@ -33,7 +33,7 @@
 				
 				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'toivo' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'toivo' ), 'WordPress' ); ?></a>
 				<span class="sep"><?php echo _x( '&middot;', 'Separator in site info.', 'toivo' ); ?></span>
-				<?php printf( __( 'Theme %1$s by %2$s', 'toivo' ), 'Toivo', '<a href="https://foxland.fi" rel="designer">Foxland</a>' ); ?>
+				<?php printf( __( 'Theme %1$s by %2$s', 'toivo' ), 'Toivo', '<a href="https://foxland.fi">Foxland</a>' ); ?>
 			
 			<?php endif; // End check for footer text. ?>
 			
