@@ -8,7 +8,7 @@
 /**
  * The current version of the theme.
  */
-define( 'TOIVO_VERSION', '1.1.2' );
+define( 'TOIVO_VERSION', '1.2.0' );
 
 /**
  * The suffix to use for scripts.
@@ -88,9 +88,13 @@ function toivo_setup() {
 	add_theme_support( 'title-tag' );
 	
 	/* Add theme support for site logo. */
-	add_theme_support( 'site-logo', array(
-		'size' => 'toivo-site-logo',
-	) );
+	add_theme_support( 'custom-logo', apply_filters( 'toivo_custom_logo_arguments', array(
+		'height' => 300,
+		'width'  => 300,
+	) ) );
+	
+	/* Add theme support for refresh widgets. */
+	add_theme_support( 'customize-selective-refresh-widgets' );
 
 	/* Add theme support for responsive videos. */
 	add_theme_support( 'jetpack-responsive-videos' );
@@ -211,7 +215,7 @@ function toivo_scripts() {
 	}
 	
 	/* Enqueue active theme styles. */
-	wp_enqueue_style( 'toivo-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'toivo-style', get_stylesheet_uri(), array(), toivo_theme_version() );
 	
 	/* Enqueue responsive navigation if one of the menus is in use. */
 	if ( has_nav_menu( 'primary' ) || has_nav_menu( 'top' ) || has_nav_menu( 'social' ) ) {
@@ -235,6 +239,17 @@ function toivo_scripts() {
 
 }
 add_action( 'wp_enqueue_scripts', 'toivo_scripts' );
+
+/**
+ * Get theme version number, works also for child themes.
+ *
+ * @since  1.2.0
+ * @return string $theme_version
+ */
+function toivo_theme_version() {
+	$theme = is_child_theme() ? wp_get_theme( get_stylesheet() ) : wp_get_theme( get_template() );
+	return $theme_version = $theme->get( 'Version' );
+}
 
 /**
  * Function for deciding which pages should have a one-column layout.
