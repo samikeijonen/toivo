@@ -25,7 +25,7 @@
 
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'toivo' ); ?></a>
 
-	<?php if ( has_nav_menu( 'top' ) || has_nav_menu( 'social' ) || ( function_exists( 'jetpack_has_site_logo' ) && jetpack_has_site_logo() ) ) : ?>
+	<?php if ( has_nav_menu( 'top' ) || has_nav_menu( 'social' ) || ( function_exists( 'has_custom_logo' ) && has_custom_logo() ) ) : ?>
 		<div id="top-header" class="top-header">
 			
 			<div id="top-header-buttons" class="top-header-buttons">
@@ -49,7 +49,7 @@
 		
 		<div class="wrap">
 		
-			<?php if ( function_exists( 'jetpack_the_site_logo' ) ) jetpack_the_site_logo(); ?>
+			<?php if ( function_exists( 'the_custom_logo' ) ) the_custom_logo(); ?>
 	
 			<div class="site-branding">
 			
