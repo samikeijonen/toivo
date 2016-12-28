@@ -4,12 +4,12 @@ Theme URI: https://foxland.fi/downloads/toivo/
 Author: Sami Keijonen
 Author URI: https://foxland.fi
 Description: Toivo is perfect fit for business, personal or blog sites. It has beautiful Front Page template where you can show your important content, testimonials and Callout links. Toivo is an accessible, translation-ready theme which supports plenty of features like Right to Left languages and Schema.org microdata.
-Version: 1.1.2
+Version: 1.2.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: toivo
 Domain Path: /languages/
-Tags: white, light, one-column, two-columns, left-sidebar, right-sidebar, fluid-layout, responsive-layout, accessibility-ready, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready 
+Tags: one-column, two-columns, left-sidebar, right-sidebar, accessibility-ready, custom-background, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, blog, news, portfolio 
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -434,7 +434,8 @@ h6 {
 		margin-top: 40px;
 	}
 	
-	.has-site-logo.custom-header-image .site-branding {
+	.has-site-logo.custom-header-image .site-branding,
+	.wp-custom-logo.custom-header-image .site-branding {
 		margin-top: 0;
 	}
 
@@ -1420,10 +1421,13 @@ button#nav-toggle {
 	}
 	
 	.has-site-logo .top-navigation ul,
-	.has-site-logo .social-navigation ul {
+	.has-site-logo .social-navigation ul,
+	.wp-custom-logo .top-navigation ul,
+	.wp-custom-logo .social-navigation ul	{
 		padding-bottom: 80px;
 	}
-	.has-site-logo .social-navigation ul {
+	.has-site-logo .social-navigation ul,
+	.wp-custom-logo .social-navigation ul	{
 		padding-bottom: 80px;
 		padding-top: 40px;
 	}
@@ -1871,6 +1875,7 @@ button#nav-toggle {
 	height: 1px;
 	width: 1px;
 	overflow: hidden;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
 }
 
 .screen-reader-text:focus {
@@ -2643,6 +2648,7 @@ ol.comment-list dl dl {
 /* Avatars and images. */
 
 .site-logo,
+.custom-logo,
 .avatar,
 .entry-testimonial img,
 img.attachment-toivo-testimonial {
@@ -2650,6 +2656,7 @@ img.attachment-toivo-testimonial {
 }
 
 .site-logo,
+.custom-logo,
 .site-header .avatar {
 	margin-top: 1em;
 	max-width: 150px;
@@ -2670,6 +2677,7 @@ img.attachment-toivo-testimonial {
 @media screen and (min-width: 360px) {
 
 	.site-logo,
+	.custom-logo,
 	.site-header .avatar {
 		margin-top: -75px;
 	}
@@ -3784,6 +3792,7 @@ body .search-submit {
 }
 
 .site-logo,
+.custom-logo,
 .site-header .avatar {
 	border: 6px solid #fff;
 }
