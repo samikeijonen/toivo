@@ -2,7 +2,7 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Toivo 1.1.2\n"
+"Project-Id-Version: Toivo 1.2.0\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
 "POT-Creation-Date: 2016-01-29 07:44:29+00:00\n"
 "MIME-Version: 1.0\n"
@@ -11,7 +11,7 @@ msgstr ""
 "PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"X-Generator: grunt-wp-i18n 0.5.0\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
 "Language: en_US\n"
 
 #: 404.php:15
@@ -78,7 +78,7 @@ msgstr ""
 #: content-audio.php:33 content-child-pages.php:33
 #: content-jetpack-portfolio.php:33 content-jetpack-testimonial.php:23
 #: content-jetpack-testimonial.php:68 content-link.php:42 content-page.php:29
-#: content-video.php:33 content.php:33 functions.php:281
+#: content-video.php:33 content.php:33 functions.php:296
 #. translators: %s: Name of current post
 #. Translators: The %s is the post title shown to screen readers.
 msgid "Read more %s"
@@ -126,23 +126,23 @@ msgstr ""
 msgid "Theme %1$s by %2$s"
 msgstr ""
 
-#: functions.php:124
+#: functions.php:128
 msgid "The main sidebar. It is displayed on the right or left side of the page."
 msgstr ""
 
-#: functions.php:134
+#: functions.php:138
 msgid "A sidebar located in the footer of the site."
 msgstr ""
 
-#: functions.php:144
+#: functions.php:148
 msgid "A sidebar located in the Front Page Template."
 msgstr ""
 
-#: functions.php:226
+#: functions.php:230
 msgid "Expand child menu"
 msgstr ""
 
-#: functions.php:227
+#: functions.php:231
 msgid "Collapse child menu"
 msgstr ""
 
@@ -618,38 +618,37 @@ msgctxt "nav menu location"
 msgid "Social"
 msgstr ""
 
-#: functions.php:123
+#: functions.php:127
 msgctxt "sidebar"
 msgid "Primary"
 msgstr ""
 
-#: functions.php:133
+#: functions.php:137
 msgctxt "sidebar"
 msgid "Subsidiary"
 msgstr ""
 
-#: functions.php:143
+#: functions.php:147
 msgctxt "sidebar"
 msgid "Front Page"
 msgstr ""
 
-#: functions.php:170
-#. Translators: If there are characters in your language that are not
-#. * supported by Lato, translate this to 'off'. Do not translate
-#. * into your own language.
+#: functions.php:174
+#. Translators: If there are characters in your language that are not supported
+#. by Lato, translate this to 'off'. Do not translate into your own language.
 msgctxt "Lato font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:176
-#. Translators: If there are characters in your language that are not
-#. * supported by Raleway, translate this to 'off'. Do not translate
-#. * into your own language.
+#: functions.php:180
+#. Translators: If there are characters in your language that are not supported
+#. by Raleway, translate this to 'off'. Do not translate into your own
+#. language.
 msgctxt "Raleway font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:302
+#: functions.php:317
 msgctxt "dash before menu item description"
 msgid "&ndash;"
 msgstr ""
