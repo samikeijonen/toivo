@@ -31,6 +31,15 @@ All other resources and theme elements are licensed under the [GNU GPL](http://w
 
 ## Changelog
 
+### Version 1.2.0 - December 28, 2016
+
+* Update using WordPress Custom Logo feature. Before logo was from Jetpack.
+* Update media grapper script.
+* Fix skip to content script.
+* Remove rel="designer" from the footer.
+* Add theme support for refresh widgets.
+* Update screen-reader-text class by adding word-wrap: normal.
+
 ### Version 1.1.2 - January 29, 2016
 
 * Update multi-level dropdown menu script for better keyboard accessibility.
